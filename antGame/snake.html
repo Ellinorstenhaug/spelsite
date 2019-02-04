@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake</title>
+</head>
+
+<body>
+    <header><h1>Welcome to ant with friends!</h1></header>
+    <div id="container-score">
+        <button class="btnstart">Start</button> <br>
+        <span>Time:</span>
+        <span id="timer">00000</span> <br>
+        <span>Friends collected:</span>
+        <span id="friend-count">__</span> <br>
+       <!--  <span>Score:</span> 
+        <span id="score">__</span> -->
+    </div>
+
+    <!-- Spel -->
+    <div id="container-spel">
+        <canvas id="gameCanvas" width="400" height=400"></canvas>
+        <div style="display:none;">
+            <img id="horizontal"
+                 src="images/myra_kryper1.png"
+                 width="20" height="20">
+            <img id="vertical"
+                 src="images/myra_kryper2.png"
+                 width="20" height="20">
+                 <img id="source_friend"
+                      src="images/kompis_myra.png"
+                      width="20" height="20">
+          </div>
+        <script src="snake.js"></script>
+    </div>
+</body>
+
+</html>
