@@ -16,6 +16,8 @@ let myra = [
 
 let takeFriend = new Audio('sounds/obi-wan-hello-there.mp3');
 let lostFriends = new Audio('sounds/Game-Death.mp3');
+let totalSeconds = 0;
+let friend = 0;
 let box = 20;
 // Poäng
 let score = 0;
@@ -28,7 +30,11 @@ let foodY;
 // Horizontal hastighet
 let dx = 20; // Masken börjar krypa i x-led
 // Vertical hastighet
-let dy = 00;
+let dy = 0;
+
+// Start och stop timer
+
+
 
 // Bestämmer storleken på canvas och retunerar en 2dimensionell canvas
 let gameCanvas = document.getElementById("gameCanvas");
@@ -40,32 +46,40 @@ context.strokeStyle = CANVAS_BORDER_COLOUR;
 context.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
 context.strokeRect(0, 0, gameCanvas.width, gameCanvas.height);
 
+let timer = 0;
+function setTimer() {
+  document.getElementById('timer').innerHTML = totalSeconds++;
+}
+function stopTimer() {
+  clearInterval(timer);
+}
+// Startar spelet
 document.addEventListener("click", function(){
+  totalSeconds = 0;
+  timer = setInterval(setTimer, 1000);
+  setTimer();
+
+  friend = 0;
+  countFriends();
+  
+  myra = [
+    {x: 140, y: 140},
+  ];
   // Startar spelet med main()
   main();
-  // Startar med ett Äpple
+  // Startar med en myra
   createFriend();
-  // Timer
-  let totalSeconds = 0;
-  setInterval(setTime, 1000);
-  function setTime() {
-  document.getElementById('timer').innerHTML = ++totalSeconds;
-}
 });
-
 function main() {
   // Om man krashar masken så stoppar den direkt. Och spelar krashljud.
   if (ifGameOver()){
-    return lostFriends.play();
+    console.log(totalSeconds + 'if Game over');
+    return lostFriends.play() && stopTimer();
   }
   setTimeout(function onTick() {
     changingDirection = false;
     clearCanvas();
     drawFriend();
-    console.log(myra[0].x + '  myra[0].x');
-    console.log(myra[0].y + '  myra[0].y');
-    console.log(foodX + ' FoodX');
-    console.log(foodY + ' FoodY');
     makingFriends();
     drawAnt();
     // Kör main igen för att den ska bli en loop
@@ -86,10 +100,6 @@ const img_friend = document.getElementById('source_friend');
 function drawFriend() {
   console.log('img_friend');
   context.drawImage(img_friend, foodX, foodY);
-  /* context.fillStyle = FOOD_COLOUR;
-  context.strokestyle = FOOD_BORDER_COLOUR;
-  context.fillRect(foodX, foodY, 20, 20);
-  context.strokeRect(foodX, foodY, 20, 20); */
  }
 
 function makingFriends() {
@@ -99,7 +109,7 @@ function makingFriends() {
   // Pop tar bort en ruta i slutet på masken.
   const didEatFood = myra[0].x === foodX && myra[0].y === foodY;
   if (didEatFood) {
-    document.getElementById('score').innerHTML = score += 10; // Adderar poäng
+    //countScore(); // Adderar poäng
     //document.getElementById('score').innerHTML = score; // Visar det på hemsidan
     takeFriend.play();
     createFriend();
@@ -126,11 +136,8 @@ function ifGameOver() {
 // randomPlace generarar slumpmässiga tal som sedan createApple använder tillsammans med drawApple
 function randomPlace(min, max) {
   let random = Math.round((Math.random() * (max-min) + min) / box) * box;
-
-  console.log(random + ' random');
   return random
 }
-
 
 function createFriend() {
   foodX = randomPlace(0, gameCanvas.width - box);
@@ -138,10 +145,15 @@ function createFriend() {
 };
 
 
-// Räknar antalet äpplen som masken äter
-let friend = 0;
+// Räknar antalet kompisar som myran värvar
+/* function countScore(){
+  if (restart){
+    score = 0;
+  }
+  document.getElementById('score').innerHTML = friend*2.5;
+} */
 function countFriends() {
-  document.getElementById('friend-count').innerHTML = ++friend;
+  document.getElementById('friend-count').innerHTML = friend++;
 }
 // Loopar ut masken på skärmen
 function drawAnt() {
@@ -153,11 +165,6 @@ const img_vertical = document.getElementById('vertical');
 
 function drawAntPart(myraPart) {
   context.drawImage(img_horizontal, myraPart.x, myraPart.y);
-  /* context.drawImage(img_vertical, myraPart.x, myraPart.y); */
- /*  context.fillStyle = MYRA_COLOUR;
-  context.strokeStyle = MYRA_BORDER_COLOUR;
-  context.fillRect(MYRAPart.x, MYRAPart.y, 10, 10);
-  context.strokeRect(MYRAPart.x, MYRAPart.y, 10, 10);; */
 }
   
   document.addEventListener("keydown", changeDirection)
