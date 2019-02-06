@@ -4,21 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Sten, sax & Påse</title>
 </head>
 <body>
     <div class=wrapper>
-            <div class=column style="width:100%;height: 5%; text-align: center;">
+            <div class="column">
                     <p id=starttext>Sten sax påse</p>
                 </div>
         <div class=column style="width:100%;">
-            <p class="p1" id="BotChoose" style="float:left"></p>
-            <p class="p1" id="Result" style="float:right" ></p>
+            <p class="p1" id="BotChoose" style="float:left">Bot</p>
+            <p class="p1" id="Result" style="float:right">You</p> <br>
+            <p class="p1" id="yourChoice" style="float:right"></p>
             <p class="p1" id=wHappend style="text-align:center">Choose your desteny</p>
-            <div style="align-content: center">
-            <button class="butnz"onclick="random('Sten')">Sten</button>
-            <button class="butnz"onclick="random('Sax')">Sax</button>
-            <button class="butnz"onclick="random('Pose')">Påse</button>
+            <div class="butnz">
+            <button onclick="random('Sten')">Sten</button>
+            <button onclick="random('Sax')">Sax</button>
+            <button onclick="random('Pose')">Påse</button>
             </div>
         </div>
       

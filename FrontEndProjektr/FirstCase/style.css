@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Pacifico");
 .wrapper {
     display: -ms-flexbox;
     display: flex;   
@@ -7,11 +8,11 @@
 }
 
 .column {
-    height: 300px;
+    /* height: 300px; */
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: #074f66;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .column2 {
@@ -19,12 +20,17 @@
     float: left;
 
 }
+#starttext {
+    font-family: 'Pacifico', serif;
+    font-size: 2em;
+}
 
 .p1 {
+    font-family: 'Pacifico', serif;
     font-size: 16px;
 }
 
 .butnz{
-    float:left;
-    width: 33%;
+    display: inline;
+    width: 10%;
 }

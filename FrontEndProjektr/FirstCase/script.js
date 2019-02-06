@@ -3,19 +3,23 @@ function random(x){
     let BotChoose = document.getElementById("BotChoose");
     let Result = document.getElementById("Result");
     let wHappend = document.getElementById("wHappend");
+    let yourChoice = document.getElementById("yourChoice");
+    let sten = '<img src="images/player_ssp-26.svg">';
+    let sax = '<img src="images/player_ssp-24.svg">';
+    let pose = '<img src="images/player_ssp-22.svg">';
     var max = 4;
     var min = 1;
     var botanswer= Math.floor(Math.random() * (max - min)) + min;
     var resultat;
     var botresult;
     if(botanswer == 1){
-        botresult = "Sten";
+        botresult = '<img src="images/bot_ssp-25.svg">';
     }
     else if(botanswer == 2){
-        botresult= "Sax";
+        botresult= '<img src="images/bot_ssp-23.svg">';
     }
     else {
-        botresult = "Påse"
+        botresult = '<img src="images/bot_ssp-21.svg">';
     }
     switch (x) {
      case "Sten":
@@ -23,15 +27,18 @@ function random(x){
      switch(botanswer){
          case 1:
          console.log("Bot choose rock, result is even");
+         yourChoice.innerHTML="Du valde sten" + sten;
          resultat = "Even";
          break;
          case 2:
          console.log("Bot choose Sax, you won");
-         lastresult++;
+         yourChoice.innerHTML="Du valde sten" + sten;
          resultat = "Victory"
+         lastresult++;
          break;
          case 3:
          console.log("Bot choose Påse, you lost");
+         yourChoice.innerHTML="Du valde sten" + sten;
          resultat = "Lost";
          break;
      }
@@ -40,14 +47,17 @@ function random(x){
      switch(botanswer){
         case 1:
         console.log("Bot choose rock, you lost");
+        yourChoice.innerHTML="Du valde sax" + sax;
         resultat = "Lost";
         break;
         case 2:
         console.log("Bot choose Sax,  result is even");
+        yourChoice.innerHTML="Du valde sax" + sax;
         resultat = "Even";
         break;
         case 3:
         console.log("Bot choose Påse, you won");
+        yourChoice.innerHTML="Du valde sax" + sax;
         lastresult++;
         resultat = "Victory"
         break;
@@ -59,15 +69,18 @@ function random(x){
      switch(botanswer){
         case 1:
         console.log("Bot choose rock, you won");
+        yourChoice.innerHTML="Du valde påse" + pose;
         lastresult++;
         resultat = "Victory"
         break;
         case 2:
         console.log("Bot choose Sax,  you lost");
+        yourChoice.innerHTML="Du valde påse" + pose;
         resultat = "Lost";
         break;
         case 3:
         console.log("Bot choose Påse, result is even");
+        yourChoice.innerHTML="Du valde påse" + pose;
         resultat = "Even";
         break;
     }
@@ -75,6 +88,7 @@ function random(x){
       }
    BotChoose.innerHTML="Bot valde " + botresult;
    Result.innerHTML="S/S/P Poäng "+ lastresult;
+   
    wHappend.innerHTML=resultat;
 
 }
