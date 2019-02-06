@@ -1,0 +1,30 @@
+.wrapper {
+    display: -ms-flexbox;
+    display: flex;   
+    width:50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.column {
+    height: 300px;
+    float: left;
+    border: 1px solid black;
+    color: #074f66;
+    font-size: 18px;
+}
+
+.column2 {
+    height: 300px;
+    float: left;
+
+}
+
+.p1 {
+    font-size: 16px;
+}
+
+.butnz{
+    float:left;
+    width: 33%;
+}
