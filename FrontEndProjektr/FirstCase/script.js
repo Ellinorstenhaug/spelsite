@@ -27,7 +27,7 @@ function random(x){
          break;
          case 2:
          console.log("Bot choose Sax, you won");
-         lastresult++;
+         lastresult = lastresult + 10;
          resultat = "Victory"
          break;
          case 3:
