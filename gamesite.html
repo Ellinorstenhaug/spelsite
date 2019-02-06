@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory</title>
+    <link rel="stylesheet" href="memory/style.css">
+    <link rel="stylesheet" href="gamesite.css">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <section class="game">
+        <div class="game-container">
+            <!-- <div class="heading"> -->
+            <!-- <button onclick="startMemory()" class="start-button">Starta spel!</button> -->
+            <!-- <button onclick="win()" class="start-button">Sluta spel!</button> -->
+            <!-- </div> -->
+            <div class="game-wrapper">
+                <section class="memory-game">
+
+                    <div id="winner" class="win">
+                        <h1 class="win-heading">Grattis!</h1>
+                        <h2 class="win-heading">Poäng: <span id="points"></span></h2>
+                    </div>
+
+                    <div class="memory-card" data-framework="bowser">
+                        <img class="front-face" src="Memory/img/memory_browserjr.png" alt="bowserjr" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                    <div class="memory-card" data-framework="bowser">
+                        <img class="front-face" src="Memory/img/memory_browserjr.png" alt="Bowserjr" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+
+                    <div class="memory-card" data-framework="myra">
+                        <img class="front-face" src="Memory/img/memory_myra.png" alt="memory_myra" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 png" />
+                    </div>
+                    <div class="memory-card" data-framework="myra">
+                        <img class="front-face" src="Memory/img/memory_myra.png" alt="memory_myra" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+
+                    <div class="memory-card" data-framework="spacein1">
+                        <img class="front-face" src="Memory/img/memory_spacein1.png" alt="spacein1" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                    <div class="memory-card" data-framework="spacein1">
+                        <img class="front-face" src="Memory/img/memory_spacein1.png" alt="spacein1" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+
+                    <div class="memory-card" data-framework="spacein2">
+                        <img class="front-face" src="Memory/img/memory_spacein2.png" alt="spacein2" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                    <div class="memory-card" data-framework="spacein2">
+                        <img class="front-face" src="Memory/img/memory_spacein2.png" alt="spacein2" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+
+                    <div class="memory-card" data-framework="memory1">
+                        <img class="front-face" src="Memory/img/memory1.png" alt="memory1" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                    <div class="memory-card" data-framework="memory1">
+                        <img class="front-face" src="Memory/img/memory1.png" alt="memory1" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+
+                    <div class="memory-card" data-framework="spacein3">
+                        <img class="front-face" src="Memory/img/memory_spacein3.png" alt="spacein3" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                    <div class="memory-card" data-framework="spacein3">
+                        <img class="front-face" src="Memory/img/memory_spacein3.png" alt="spacein3" />
+                        <img class="back-face" src="Memory/img/memory2.png" alt="memory2 " />
+                    </div>
+                </section>
+                <aside>
+                    <div class="sidebar">
+                        <div class="heading">
+                            <button onclick="startMemory()" class="start-button">Starta spel!</button>
+
+                            <h1 class="pt-1">Tid: <span id="minutes">00</span>:<span id="seconds">00</span></h1>
+                            <h1 class="pt-1">Antal försök: <span id="numberOfTries"></span> </h1>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="assorted-games">
+        <div class="game1">
+        </div>
+        <div class="game2"></div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="memory/main.js"></script>
+</body>
+
+</html>

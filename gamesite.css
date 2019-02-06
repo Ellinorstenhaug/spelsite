@@ -1,0 +1,62 @@
+body {
+    background-color: #330136;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game {
+    padding:40px 0; 
+    
+}
+
+.assorted-games {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.game1,
+.game2 {
+    width: 25%;
+    display: block;
+    height: 275px;
+    margin: 30px 15px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.game1 {
+    background-color: #eee;
+}
+
+.game2 {
+    background-color: #eee;
+}
+
+footer {
+    background-color: #C9463D;
+    height: 200px;
+    width: 100%;
+}
+
+.game-container {
+    /* background-color:white; */
+    margin: 0;
+}
+
+aside {
+    width: 250px;
+    height: 500px;
+    /* background-color: #eee; */
+    /* right:20px; */
+    margin: 0 auto 0 -110px;
+    background-color:white;
+
+}
+
+.pt-1 {
+    padding-top:10px;
+}
