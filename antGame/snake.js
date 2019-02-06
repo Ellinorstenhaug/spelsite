@@ -1,8 +1,8 @@
 // Färger till canvas och mask
 
 const GAME_SPEED = 100;
-const CANVAS_BORDER_COLOUR = '#330136'
-const CANVAS_BACKGROUND_COLOUR = 'white'
+const CANVAS_BORDER_COLOUR = '#FF5E35'
+const CANVAS_BACKGROUND_COLOUR = '#FF5E35'
 const MYRA_COLOUR = '#FF5E35';
 const MYRA_BORDER_COLOUR = '#C9463D';
 const FOOD_COLOUR = '#962E40';
@@ -113,7 +113,7 @@ function makingFriends() {
     //document.getElementById('score').innerHTML = score; // Visar det på hemsidan
     takeFriend.play();
     createFriend();
-    countFriends()// Skapar nytt äpple på en annan plats efter som masken har ätit upp den.
+    countFriends();// Skapar nytt äpple på en annan plats efter som masken har ätit upp den.
   } else {
     myra.pop();
   }
@@ -147,13 +147,17 @@ function createFriend() {
 
 // Räknar antalet kompisar som myran värvar
 /* function countScore(){
-  if (restart){
     score = 0;
-  }
   document.getElementById('score').innerHTML = friend*2.5;
 } */
+
+
+
 function countFriends() {
+  let score = document.getElementById('score');
+  score.innerHTML = friend * 10;
   document.getElementById('friend-count').innerHTML = friend++;
+
 }
 // Loopar ut masken på skärmen
 function drawAnt() {
