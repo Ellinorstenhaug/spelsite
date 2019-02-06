@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
@@ -12,52 +12,86 @@
         <style>
             *{
                 color: #FF5E35; 
-                font-family: 'Pacifico', cursive;
+                font-family: 'Open Sans', sans-serif;
                 box-sizing: border-box; 
             }
 
-            .class{
+            body{
+                background-color: #330136; 
+                margin: 0; 
+                padding: 0; 
+            }
 
+            a{
+                text-decoration: none; 
+            }
+
+            .game{
+                width: 50%; 
+                float: left; 
+                text-align: center; 
+                margin-bottom: 50px; 
+            }
+
+            .clearfix{
+                clear: both;
+            }
+
+            .allgames{
+                max-width: 1200px; 
+                margin: auto auto; 
+            }
+
+            img{
+                width: 60%; 
+                height: auto; 
+                background-color: rgb(243, 243, 243); 
+                margin-bottom: 10px; 
             }
 
 
             footer{
-                background-color: #962E40; 
-                padding: 30px; 
+                background-color: #5E1742; 
+                width: 100%; 
+                padding: 50px; 
                 text-align: center; 
             }
             
         </style>
         
-    <div class="game">
-            <a href=""><img src="" alt="memory"></a>
+    <div class="allgames">
+        <div class="game">
+            <a href="./Memory/index.html"><img src="./memory.svg" alt="memory"></a><br>
             <a href="./Memory/index.html">Memory</a>
-    </div>
-    
+        </div>
+        
+        <div class="game">
+            <a href="./mario/nintendo.html"><img src="./mariosvg.svg" alt="mario battle"></a><br>
+            <a href="./mario/nintendo.html">Mario Battle</a>
+        </div>
+        
+        <div class="game">
+            <a href="./antGame/snake.html"><img src="./ants.svg" alt="ant friends"></a><br>
+            <a href="./antGame/snake.html">Ant with Friends</a>
+        </div>
+        
+        <div class="game">
+            <a href="./FrontEndProjektr/FirstCase/index.html"><img src="./stenssaxpåse.svg" alt="rock paper scissors"></a><br>
+            <a href="./FrontEndProjektr/FirstCase/index.html">Sten sax påse</a>
+        </div>
+        
     <div class="game">
-        <a href=""><img src="" alt="mario battle"></a>
-        <a href="./mario/nintendo.html">Mario Battle</a>
-    </div>
-    
-    <div class="game">
-        <a href=""><img src="" alt="ant friends"></a>
-        <a href="./antGame/snake.html">Ant with Friends</a>
-    </div>
-    
-    <div class="game">
-        <a href=""><img src="" alt="rock paper scissors"></a>
-        <a href="">Rock paper scissors</a>
-    </div>
-    
-    <div class="game">
-        <a href=""><img src="" alt="tetris"></a>
+        <a href="./Tetris/index.html"><img src="./tetris.svg" alt="tetris"></a><br>
         <a href="./Tetris/index.html">Tetris</a>
     </div>
     
     <div class="game">
-        <a href=""><img src="" alt="staggering beauty"></a>
+        <a href=""><img src="./tetris.svg" alt="staggering beauty"></a><br>
         <a href="">Staggering Beauty</a>
     </div>
+</div>
+    
+    <div class="clearfix"></div>
     
     <footer>
         <p>Mikaela, Ellinor, Sofie och Denis</p>
