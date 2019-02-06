@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 
+
+$darkplum: #330136;
+$orange: #FF5E35;
+$darkorange: #C9463D;
+$darkred: #962E40;
+
 #container-spel{
     width: 100%;
     margin-left: auto;
@@ -27,7 +33,7 @@ header {
 }
 
 h1 {
-    color: #330136;
+    color: $darkplum;
     font-family: Pacifico;
 }
 
