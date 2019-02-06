@@ -1,6 +1,9 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
+
+let points = 0;
+
 context.scale(20, 20);
 
 function arenaSweep () {
@@ -11,9 +14,14 @@ function arenaSweep () {
             }
         }
         const row = arena.splice(y, 1)[0].fill(0);
-            arena.unshift(row);
-            ++y;
-    } 
+
+        arena.unshift(row);
+        ++y;
+        // ++points;
+        document.getElementById('points').innerHTML = ++points;
+
+        } 
+
 }
 
 function collide(arena, player) {
@@ -24,18 +32,19 @@ function collide(arena, player) {
                 (arena[y + o.y] &&
                     arena[y + o.y][x + o.x]) !== 0) {
                 return true;
-
             }
-            
         }
     }
     return false;
+
 }
 
 function createMatrix(w, h) {
     const matrix = [];
     while (h--) {
         matrix.push(new Array(w).fill(0));
+
+
     }
     return matrix;
 }
@@ -120,6 +129,7 @@ function drawMatrix(matrix, offset) {
                     context.fillStyle = colors[value];
                     context.fillRect(x + offset.x,
                         y + offset.y, 1, 1);
+
                 }
             });
         }
@@ -140,6 +150,7 @@ function merge(arena, player) {
             }
         });
     });
+
 }
 
 function playerDrop() {
@@ -152,6 +163,7 @@ function playerDrop() {
         merge(arena, player);
         playerReset();
         arenaSweep();
+
     }
     dropCounter = 0;
 }
@@ -180,6 +192,7 @@ function playerReset() {
     
     if (collide(arena, player)) {
         arena.forEach(row => row.fill(0));
+
     }
     lockMatrix = 0;
 }
