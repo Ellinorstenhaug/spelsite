@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+.Logo,
+h1,
+h2,
+h3,
+h4,
+p,
+a{
+    font-family: 'Pacifico';
+}
+
 body{
-    background-color:gray;
+    background-color:#962E40;
+    margin:0;
+    padding:0;
 
 }
 .container {
@@ -26,9 +39,10 @@ body{
     background: #962E40;
     color: #fff;
     position: fixed;
-    width: 100%;
+    width: 99%;
     z-index: 100;
     top: 0;
+ 
   }
 
   .main-nav {
@@ -59,4 +73,22 @@ body{
     outline: none;
     background: none;
   }
+  .Logo{
+      float: left;
+      margin-left: 25px;
+      font-family: 'Pacifico';
+  }
 
+  .MainBar{ 
+    background-image:url(images/index.svg);
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    height: 70%;
+    width: 100%;
+  }
+
+  .top{
+      height: 100%;
+      
+  }
+  
