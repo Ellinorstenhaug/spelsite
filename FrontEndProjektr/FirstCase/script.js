@@ -77,6 +77,14 @@ function random(x){
    Result.innerHTML="S/S/P Poäng "+ lastresult;
    wHappend.innerHTML=resultat;
 
+
+   let points = 10;
+   let totalpoints = 0;
+
+
+   
+
+
 }
 
 
