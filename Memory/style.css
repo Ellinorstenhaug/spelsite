@@ -16,11 +16,13 @@ img {
 
 .memory-game {
     margin: auto;
-    width: 940px;
-    height: 640px;
+    width: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    background-color:white;
+    border:1px solid #5E1742;
 }
 
 .memory-card {
@@ -47,11 +49,11 @@ img {
 .back-face {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     /* background:rgb(255, 255, 255); */
     background-color: #330136;
-    border: 1px solid rgb(8, 66, 66);
+    /* border: 1px  solid rgb(8, 66, 66); */
     position: absolute;
     backface-visibility: hidden;
 }
@@ -86,16 +88,15 @@ img {
 }
 
 .heading {
-    padding-top: 40px;
-    width: 956px;
-    /* height: 200px; */
+    padding-bottom: 20px;
+    margin: 20px 0;
     display: block;
     margin: 0 auto;
 }
 
 .start-button {
     margin: auto;
-    width: 250px;
+    width: 100%;
     height: 35px;
     background-color: #C9463D;
     color: white;
@@ -111,4 +112,5 @@ img {
 .game-wrapper {
     width:auto;
     display: flex;
+    
 }
