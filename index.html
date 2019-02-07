@@ -1,104 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>   
-    
+
+<body>
+
+        <div>
+                <style>
+                    .container {
+                        padding: 0 15px;
+                        margin-right: auto;
+                        margin-left: auto;
+                        display: block;
+                    }
+        
+                    .wrapper {
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    }
+        
+                    .column {
+                        width: 100%;
+                        min-height: 1px;
+                        float: left;
+                    }
+        
+                    .header {
+                        padding: 5px 0px;
+                        background: #962E40;
+                        color: #fff;
+                        position: fixed;
+                        width: 100%;
+                        z-index: 100;
+                        top: 0;
+                    }
+        
+                    .main-nav {
+                        float: right;
+                    }
+        
+                    .nav>li {
+                        float: left;
+                        padding: 20px;
+                        margin-bottom: 15px;
+                        list-style-type: none;
+                        font-family: 'Pacifico', cursive;
+                    }
+        
+                    .header .main-nav .nav .nav-item {
+                        font-weight: normal;
+                        margin-right: 30px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+        
+                    .header .main-nav .nav .nav-item a {
+                        color: white;
+                        font-size: 14px;
+                        padding: 15px 10px;
+                        font-family: 'Pacifico', cursive;
+                    }
+        
+                    .header .main-nav .nav .nav-item a:hover {
+                        color: red;
+                        background: none;
+                    }
+        
+                    .header .main-nav .nav .nav-item a:focus {
+                        outline: none;
+                        background: none;
+                    }
+        
+                    .Logo {
+                        float: left;
+                        margin-left: 25px;
+                        font-family: 'Pacifico';
+                    }
+        
+                    .MainBar {
+                        background-image: url(images/index.svg);
+                        background-repeat: no-repeat;
+                        margin-top: 120px;
+                        height: 70%;
+                        width: 100%;
+                        padding-top: 200px;
+                    }
+        
+                    .top {
+                        height: 100%;
+        
+                    }
+        
+                    .up {
+                        position: relative;
+                        top: -195px;
+                        left: 64px;
+                    }
+                </style>
+        
+                <header class="header">
+                    <h2 class="Logo">PlayStation</h2>
+                    <nav id="main-nav" class="main-nav">
+        
+                        <ul class="nav">
+                            <li class="nav-item"> <a href="index.html" target="_blank">Index?</a></li>
+                            <li class="nav-item"><a href="about.html" target="_blank">Games?</a></li>
+                        </ul>
+                    </nav>
+        
+                </header>
+        
+                <section class="MainBar">
+                    <img class="up" src="images/raket_Raket.svg" width="350px" ;>
+                </section>
+            </div>
+
+
 
     <div class="page">
         <style>
-            *{
-                color: #FF5E35; 
+            .page * {
+                color: #FF5E35;
                 font-family: 'Open Sans', sans-serif;
-                box-sizing: border-box; 
+                box-sizing: border-box;
             }
 
-            body{
-                background-color: #330136; 
-                margin: 0; 
-                padding: 0; 
+            body {
+                background-color: #330136;
+                width: 100%;
+                margin: 0;
+                padding: 0;
             }
 
-            a{
-                text-decoration: none; 
+            .page a {
+                text-decoration: none;
             }
 
-            .game{
-                width: 50%; 
-                float: left; 
-                text-align: center; 
-                margin-bottom: 50px; 
+            .page .game {
+                width: 50%;
+                float: left;
+                text-align: center;
+                margin-bottom: 50px;
             }
 
-            .clearfix{
+            .page .clearfix {
                 clear: both;
             }
 
-            .allgames{
-                max-width: 1200px; 
-                margin: auto auto; 
+            .page .allgames {
+                max-width: 1200px;
+                margin: auto auto;
             }
 
-            img{
-                width: 60%; 
-                height: auto; 
-                background-color: rgb(243, 243, 243); 
-                margin-bottom: 10px; 
+            .page img {
+                width: 60%;
+                height: auto;
+                background-color: rgb(243, 243, 243);
+                margin-bottom: 10px;
             }
 
 
-            footer{
-                background-color: #5E1742; 
-                width: 100%; 
-                padding: 50px; 
-                text-align: center; 
+            .page footer {
+                background-color: #5E1742;
+                width: 100%;
+                padding: 50px;
+                text-align: center;
             }
-            
         </style>
-        
-    <div class="allgames">
-        <div class="game">
-            <a href="./Memory/index.html"><img src="./images/ikoner_spel-16.svg" alt="memory"></a><br>
-            <a href="./Memory/index.html">Memory</a>
+
+        <div class="allgames">
+            <div class="game">
+                <a href="./Memory/index.html"><img src="./images/ikoner_spel-16.svg" alt="memory"></a><br>
+                <a href="./Memory/index.html">Memory</a>
+            </div>
+
+            <div class="game">
+                <a href="./mario/nintendo.html"><img src="./images/ikoner_spel-17.svg" alt="mario battle"></a><br>
+                <a href="./mario/nintendo.html">Mario Battle</a>
+            </div>
+
+            <div class="game">
+                <a href="./antGame/snake.html"><img src="./images/ikoner_spel-18.svg" alt="ant friends"></a><br>
+                <a href="./antGame/snake.html">Ant with Friends</a>
+            </div>
+
+            <div class="game">
+                <a href="./FrontEndProjektr/FirstCase/index.html"><img src="./images/ikoner_spel-19.svg" alt="rock paper scissors"></a><br>
+                <a href="./FrontEndProjektr/FirstCase/index.html">Sten sax påse</a>
+            </div>
+
+            <div class="game">
+                <a href="./Tetris/index.html"><img src="./images/ikoner_spel-20.svg" alt="tetris"></a><br>
+                <a href="./Tetris/index.html">Tetris</a>
+            </div>
+
+            <div class="game">
+                <a href=""><img src="./images/ikoner_spel-20.svg" alt="staggering beauty"></a><br>
+                <a href="">Staggering Beauty</a>
+            </div>
         </div>
-        
-        <div class="game">
-            <a href="./mario/nintendo.html"><img src="./images/ikoner_spel-17.svg" alt="mario battle"></a><br>
-            <a href="./mario/nintendo.html">Mario Battle</a>
-        </div>
-        
-        <div class="game">
-            <a href="./antGame/snake.html"><img src="./images/ikoner_spel-18.svg" alt="ant friends"></a><br>
-            <a href="./antGame/snake.html">Ant with Friends</a>
-        </div>
-        
-        <div class="game">
-            <a href="./FrontEndProjektr/FirstCase/index.html"><img src="./images/ikoner_spel-19.svg" alt="rock paper scissors"></a><br>
-            <a href="./FrontEndProjektr/FirstCase/index.html">Sten sax påse</a>
-        </div>
-        
-    <div class="game">
-        <a href="./Tetris/index.html"><img src="./images/ikoner_spel-20.svg" alt="tetris"></a><br>
-        <a href="./Tetris/index.html">Tetris</a>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            <p>Mikaela, Ellinor, Sofie och Denis</p>
+        </footer>
     </div>
-    
-    <div class="game">
-        <a href=""><img src="./images/ikoner_spel-20.svg" alt="staggering beauty"></a><br>
-        <a href="">Staggering Beauty</a>
-    </div>
-</div>
-    
-    <div class="clearfix"></div>
-    
-    <footer>
-        <p>Mikaela, Ellinor, Sofie och Denis</p>
-    </footer>
-</div>
 
 </body>
+
 </html>
