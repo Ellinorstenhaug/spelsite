@@ -27,18 +27,18 @@ function random(x){
      switch(botanswer){
          case 1:
          console.log("Bot choose rock, result is even");
-         yourChoice.innerHTML="Du valde sten" + sten;
+         yourChoice.innerHTML="Du valde" + sten;
          resultat = "Even";
          break;
          case 2:
          console.log("Bot choose Sax, you won");
-         yourChoice.innerHTML="Du valde sten" + sten;
+         yourChoice.innerHTML="Du valde" + sten;
          resultat = "Victory"
          lastresult++;
          break;
          case 3:
          console.log("Bot choose Påse, you lost");
-         yourChoice.innerHTML="Du valde sten" + sten;
+         yourChoice.innerHTML="Du valde" + sten;
          resultat = "Lost";
          break;
      }
@@ -47,17 +47,17 @@ function random(x){
      switch(botanswer){
         case 1:
         console.log("Bot choose rock, you lost");
-        yourChoice.innerHTML="Du valde sax" + sax;
+        yourChoice.innerHTML="Du valde" + sax;
         resultat = "Lost";
         break;
         case 2:
         console.log("Bot choose Sax,  result is even");
-        yourChoice.innerHTML="Du valde sax" + sax;
+        yourChoice.innerHTML="Du valde" + sax;
         resultat = "Even";
         break;
         case 3:
         console.log("Bot choose Påse, you won");
-        yourChoice.innerHTML="Du valde sax" + sax;
+        yourChoice.innerHTML="Du valde" + sax;
         lastresult++;
         resultat = "Victory"
         break;
@@ -69,25 +69,25 @@ function random(x){
      switch(botanswer){
         case 1:
         console.log("Bot choose rock, you won");
-        yourChoice.innerHTML="Du valde påse" + pose;
+        yourChoice.innerHTML="Du valde" + pose;
         lastresult++;
         resultat = "Victory"
         break;
         case 2:
         console.log("Bot choose Sax,  you lost");
-        yourChoice.innerHTML="Du valde påse" + pose;
+        yourChoice.innerHTML="Du valde" + pose;
         resultat = "Lost";
         break;
         case 3:
         console.log("Bot choose Påse, result is even");
-        yourChoice.innerHTML="Du valde påse" + pose;
+        yourChoice.innerHTML="Du valde" + pose;
         resultat = "Even";
         break;
     }
      break;
       }
    BotChoose.innerHTML="Bot valde " + botresult;
-   Result.innerHTML="S/S/P Poäng "+ lastresult;
+   Result.innerHTML= lastresult;
    
    wHappend.innerHTML=resultat;
 

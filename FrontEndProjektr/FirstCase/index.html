@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,28 +7,29 @@
     <link href="style.css" rel="stylesheet">
     <title>Sten, sax & Påse</title>
 </head>
+
 <body>
-    <div class=wrapper>
-            <div class="column">
-                    <p id=starttext>Sten sax påse</p>
-                </div>
-        <div class=column style="width:100%;">
-            <p class="p1" id="BotChoose" style="float:left">Bot</p>
-            <p class="p1" id="Result" style="float:right">You</p> <br>
-            <p class="p1" id="yourChoice" style="float:right"></p>
-            <p class="p1" id=wHappend style="text-align:center">Choose your desteny</p>
-            <div class="butnz">
+    <div class="wrapper">
+        <div class="column">
+            <p id="starttext">Sten sax påse</p>
+            <p id="wHappend">Choose your destiny</p>
+            <span>Score: </span>
+            <span id="Result">0</span> <br>
+        </div>
+        <div class="playground">
+            <p id="BotChoose">Bot</p>
+            <p id="yourChoice"></p>
+        </div>
+        <div class="butnz">
             <button onclick="random('Sten')">Sten</button>
             <button onclick="random('Sax')">Sax</button>
             <button onclick="random('Pose')">Påse</button>
-            </div>
         </div>
-      
-       
-      
-
     </div>
 
 </body>
-<footer><script src="script.js"></script></footer>
+<footer>
+    <script src="script.js"></script>
+</footer>
+
 </html>
