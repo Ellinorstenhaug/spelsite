@@ -1,0 +1,47 @@
+.page * {
+    color: #FF5E35;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #330136;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page a {
+    text-decoration: none;
+}
+
+.page .game {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page .clearfix {
+    clear: both;
+}
+
+.page .allgames {
+    max-width: 1200px;
+    margin: auto auto;
+}
+
+.page img {
+    width: 60%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 10px;
+}
+
+
+.page footer {
+    background-color: #5E1742;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
