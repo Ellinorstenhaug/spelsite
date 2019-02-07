@@ -16,8 +16,8 @@ img {
 
 .memory-game {
     margin: auto;
-    width: 940px;
-    height: 640px;
+    width: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
@@ -47,7 +47,7 @@ img {
 .back-face {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     /* background:rgb(255, 255, 255); */
     background-color: #330136;
@@ -95,7 +95,7 @@ img {
 
 .start-button {
     margin: auto;
-    width: 250px;
+    width: 100%;
     height: 35px;
     background-color: #C9463D;
     color: white;
