@@ -60,6 +60,8 @@ body {
     width: 100%;
     padding: 50px;
     text-align: center;
+    position: absolute;
+    top: 1400px;
 }
 
 .page{
@@ -72,7 +74,15 @@ body {
     height:360px;
     border-radius: 5px;
     box-shadow: 12px 10px 14px #330136; 
+    position: absolute;
+    right: 24%;
+    top: 924px;
+}
 
+#stagtext{
+  position: absolute;
+    top: 1320px;
+    right: 26%; 
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
@@ -186,13 +196,57 @@ a{
       }
   }
 
-  .tetrishover:hover{
+  #tet:hover{
     animation: tetris 4s; 
   }
-  
-  .ants:hover{
-    z-index: 1; 
+
+  #tetris{
+    position: absolute;
+    height: 363px;
+    width: auto;
+    left: 24%;
+    top: 924px;
   }
+
+  #tet{
+    position: absolute;
+    height: 363px;
+    width: auto;
+    left: 24%;
+    top: 924px;
+    background-color: transparent; 
+    box-shadow: none; 
+  }
+
+  #tettext{
+    position: absolute;
+    top: 1320px;
+    left: 32%;
+  }
+
+  #ants{ 
+    position: absolute;
+    height: 362px;
+    width: auto;
+    left: 24%;
+    top: 461px;
+  }
+
+
+  #ant{
+    position: absolute;
+    height: 362px;
+    width: auto;
+    left: 24%;
+    top: 461px;
+  }
+
+  #anttext{
+    position: absolute;
+    top: 850px;
+    left: 27%; 
+  }
+  
 
 
   @keyframes bjr {
@@ -200,18 +254,37 @@ a{
       margin-right: initial; 
     }
     33%, 66%{
-      margin-right: 5%; 
+      margin-right: 2%; 
     }
     66%, 100%{
       margin-right: initial; 
     }
   }
 
-  .bowser{
-      background-color: none; 
+  #bowser{
+      background-color: transparent; 
+      right: 24%;
+      position: absolute;
+      height: 362px;
+    width: auto;
+    box-shadow: none; 
   }
 
-  .bowser:hover{
+  #bowtext{
+    position: absolute;
+    top: 388px;
+    right: 29%; 
+  }
+
+  #background{
+    right: 24%;
+    position: absolute;
+    height: 362px;
+  width: auto;
+
+  }
+
+  #bowser:hover{
       animation: bjr 2s infinite; 
   }
 
@@ -219,12 +292,63 @@ a{
     
   }
   
-.sten:hover{
+#sten:hover{
   animation: ssp 4s; 
 }
 
-.memory:hover{
+#sten{
+  position: absolute;
+  right: 24%; 
+    height: 362px;
+    width: auto;
+    top: 461px;
+}
+
+#ssp{
+  position: absolute;
+  right: 24%; 
+    height: 362px;
+    width: auto;
+    top: 461px;
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+@keyframes ssp {
+  0%, 33%{
+    top: 461px; 
+  }
+  33%, 66%{
+    top: 500px; 
+  }
+  66%, 100%{
+    top: 461px; 
+  }
+}
+
+#ssp:hover{
+  animation: ssp 4s infinite; }
+
+#stentext{
+  position: absolute;
+  top: 850px;
+  right: 28%; 
+}
+
+#memory:hover{
     background-image: url(./images/index_memory2.svg); 
 }
 
+#memory{
+  position: absolute;
+    height: 362px;
+    width: auto;
+    left: 24%; 
+}
+
+#memtext{
+  position: absolute;
+  top: 388px;
+  left: 30%; 
+}
 
