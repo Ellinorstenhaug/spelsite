@@ -13,13 +13,13 @@ function random(x){
     var resultat;
     var botresult;
     if(botanswer == 1){
-        botresult = '<img src="images/bot_ssp-25.svg">';
+        botresult = '<img src="images/bot_ssp-26.svg">';
     }
     else if(botanswer == 2){
-        botresult= '<img src="images/bot_ssp-23.svg">';
+        botresult= '<img src="images/bot_ssp-28.svg">';
     }
     else {
-        botresult = '<img src="images/bot_ssp-21.svg">';
+        botresult = '<img src="images/bot_ssp-30.svg">';
     }
     switch (x) {
      case "Sten":

@@ -1,38 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#CA463C;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st1 "fill:#CA463C;stroke:#000000;stroke-width:4;stroke-miterlimit:10;">
+	<!ENTITY st2 "fill:#F15F3C;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st3 "fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;">
+	<!ENTITY st4 "fill:#5E1642;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st5 "fill:#5E1642;">
+	<!ENTITY st6 "fill:#310E34;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st7 "fill:#310E34;stroke:#000000;stroke-width:2;stroke-miterlimit:10;">
+	<!ENTITY st8 "fill:#CA463C;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st9 "fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;">
+	<!ENTITY st10 "fill:#F15F3C;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st11 "fill:#F15F3C;">
+	<!ENTITY st12 "fill:#310E34;">
+	<!ENTITY st13 "fill:none;stroke:#310E34;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;">
+	<!ENTITY st14 "fill:none;stroke:#310E34;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st15 "fill:#CA463C;">
+	<!ENTITY st16 "fill:#972E41;">
+	<!ENTITY st17 "fill:none;stroke:#310E34;stroke-width:0.5653;stroke-linecap:round;stroke-miterlimit:10;">
+	<!ENTITY st18 "fill:none;stroke:#310E34;stroke-width:0.5653;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st19 "fill:none;stroke:#5E1642;stroke-width:0.5561;stroke-linecap:round;stroke-miterlimit:10;">
+	<!ENTITY st20 "fill:none;stroke:#972E41;stroke-width:0.5561;stroke-linecap:round;stroke-miterlimit:10;">
+	<!ENTITY st21 "fill:none;stroke:#972E41;stroke-width:0.5561;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+	<!ENTITY st22 "fill:#972E41;stroke:#CA463C;stroke-width:0.25;stroke-miterlimit:10;">
+	<!ENTITY st23 "fill:#310E34;stroke:#5E1642;stroke-width:0.25;stroke-miterlimit:10;">
+	<!ENTITY st24 "fill:#F15F3C;stroke:#972E41;stroke-width:0.25;stroke-miterlimit:10;">
+	<!ENTITY st25 "fill:#310E34;stroke:#972E41;stroke-width:0.25;stroke-miterlimit:10;">
+	<!ENTITY st26 "fill:url(#SVGID_9_);">
+	<!ENTITY st27 "fill:url(#SVGID_10_);">
+	<!ENTITY st28 "fill:url(#SVGID_11_);">
+	<!ENTITY st29 "fill:url(#SVGID_12_);">
+	<!ENTITY st30 "fill:url(#SVGID_13_);">
+	<!ENTITY st31 "clip-path:url(#SVGID_15_);">
+	<!ENTITY st32 "clip-path:url(#SVGID_17_);">
+	<!ENTITY st33 "enable-background:new    ;">
+	<!ENTITY st34 "fill:#8D331A;">
+	<!ENTITY st35 "fill:#E05838;">
+	<!ENTITY st36 "fill:#E45A39;">
+	<!ENTITY st37 "fill:#D65435;">
+	<!ENTITY st38 "fill:#B8482C;">
+	<!ENTITY st39 "fill:#B5462A;">
+	<!ENTITY st40 "fill:#7B251C;">
+	<!ENTITY st41 "fill:#C2433A;">
+	<!ENTITY st42 "fill:#BE4238;">
+	<!ENTITY st43 "fill:#B63F35;">
+	<!ENTITY st44 "fill:#9F352C;">
+	<!ENTITY st45 "fill:#9C342B;">
+	<!ENTITY st46 "fill:#47133B;">
+	<!ENTITY st47 "fill:#5B1641;">
+	<!ENTITY st48 "fill:#5A1641;">
+	<!ENTITY st49 "fill:#581540;">
+	<!ENTITY st50 "fill:#51153E;">
+	<!ENTITY st51 "fill:#50143E;">
+	<!ENTITY st52 "fill:none;">
+	<!ENTITY st53 "clip-path:url(#SVGID_19_);">
+	<!ENTITY st54 "fill:#6C1A2A;">
+	<!ENTITY st55 "fill:#922D3E;">
+	<!ENTITY st56 "fill:#902C3D;">
+	<!ENTITY st57 "fill:#8C2A3B;">
+	<!ENTITY st58 "fill:#7F2434;">
+	<!ENTITY st59 "fill:#7E2334;">
+	<!ENTITY st60 "fill:#68283E;">
+	<!ENTITY st61 "fill:#371135;">
+	<!ENTITY st62 "fill:#391336;">
+	<!ENTITY st63 "fill:#3E1637;">
+	<!ENTITY st64 "fill:#4E1D3A;">
+	<!ENTITY st65 "fill:#501E3B;">
+	<!ENTITY st66 "clip-path:url(#SVGID_21_);">
+	<!ENTITY st67 "clip-path:url(#SVGID_23_);">
+	<!ENTITY st68 "clip-path:url(#SVGID_25_);">
+	<!ENTITY st69 "clip-path:url(#SVGID_28_);">
+]>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 535 275" style="enable-background:new 0 0 535 275;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#CA463C;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#CA463C;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st2{fill:#F15F3C;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st4{fill:#5E1642;stroke:#000000;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{fill:#5E1642;}
-	.st6{fill:#310E34;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st7{fill:#310E34;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st8{fill:#CA463C;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st9{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st10{fill:#F15F3C;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st11{fill:#F15F3C;}
-	.st12{fill:#310E34;}
-	.st13{fill:none;stroke:#310E34;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
-	.st14{fill:none;stroke:#310E34;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st15{fill:#CA463C;}
-	.st16{fill:#972E41;}
-	.st17{fill:none;stroke:#310E34;stroke-width:0.5653;stroke-linecap:round;stroke-miterlimit:10;}
-	.st18{fill:none;stroke:#310E34;stroke-width:0.5653;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st19{fill:none;stroke:#5E1642;stroke-width:0.5561;stroke-linecap:round;stroke-miterlimit:10;}
-	.st20{fill:none;stroke:#972E41;stroke-width:0.5561;stroke-linecap:round;stroke-miterlimit:10;}
-	.st21{fill:none;stroke:#972E41;stroke-width:0.5561;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st22{fill:#972E41;stroke:#CA463C;stroke-width:0.25;stroke-miterlimit:10;}
-	.st23{fill:#310E34;stroke:#5E1642;stroke-width:0.25;stroke-miterlimit:10;}
-	.st24{fill:#F15F3C;stroke:#972E41;stroke-width:0.25;stroke-miterlimit:10;}
-	.st25{fill:#310E34;stroke:#972E41;stroke-width:0.25;stroke-miterlimit:10;}
-	.st26{clip-path:url(#SVGID_7_);}
-</style>
 <g>
-	<path class="st5" d="M0,0c17.53,9.43,35.1,18.8,52.59,28.29c14.91,8.09,29.79,16.24,44.6,24.51c9.87,5.51,20.3,9.48,31.09,12.84
+	<path style="&st11;" d="M0,0c17.53,9.43,35.1,18.8,52.59,28.29c14.91,8.09,29.79,16.24,44.6,24.51c9.87,5.51,20.3,9.48,31.09,12.84
 		c20.84,6.51,41.52,13.53,62.24,20.42c15.99,5.32,32.32,9.05,49.14,10.32c8.28,0.62,16.59,0.75,24.89,1.05
 		c5.56,0.2,10.79-1.49,15.36-4.3c12.48-7.66,26.29-12.23,39.68-17.79c4.06-1.69,7.98-3.74,11.95-5.65
 		c6.54-3.15,13.23-3.54,19.84-0.49c13.02,6.01,25.98,12.15,38.89,18.4c2.87,1.39,5.66,3.17,7.31,6.6
