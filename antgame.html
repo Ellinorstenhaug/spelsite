@@ -23,19 +23,8 @@
     <section class="game">
         <div class="wrapper">
             <div class="game-place">
-                <span>Ants with friends!</span>
-                <div id="container-score">
-                    <span>Time:</span>
-                    <span id="timer">00000</span> <br>
-                    <span>Friends collected:</span>
-                    <span id="friend-count">__</span> <br>
-                    <span>Score:</span>
-                    <span id="score">0</span> <br>
-                    <button class="btnstart">Start</button>
-                </div>
-                <!-- Spel -->
                 <div id="container-spel">
-                    <canvas id="gameCanvas" width="400" height=400"></canvas>
+                    <canvas id="gameCanvas" width="500" height=500"></canvas>
                     <div style="display:none;">
                         <img id="horizontal" src="images/myra_kryper1.png" width="20" height="20">
                         <img id="vertical" src="images/myra_kryper2.png" width="20" height="20">
@@ -45,6 +34,21 @@
             </div>
         </div>
     </section>
+    <aside>
+        <span>Ants with friends!</span>
+        <button onclick="startGame()" class="btnstart">Starta spel!</button> <br>
+        <span>Time:</span>
+        <span id="timer">00000</span> <br>
+        <span>Friends collected:</span>
+        <span id="friend-count">__</span> <br>
+        <span>Score:</span>
+        <span id="score">0</span> <br>
+        <!-- <div class="sidebar"> -->
+        <!-- <h1>Tid: <span id="minutes">00</span>:<span id="seconds">00</span> </h1>
+                    <h1>Antal försök: <span id="numberOfTries"></span> </h1> -->
+
+        <!-- </div> -->
+    </aside>
 
     <footer>
         <p>Mikaela, Ellinor, Sofie och Denis</p>

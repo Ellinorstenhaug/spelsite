@@ -54,7 +54,23 @@ function stopTimer() {
   clearInterval(timer);
 }
 // Startar spelet
-document.addEventListener("click", function(){
+document.addEventListener("click", startGame());
+  /* totalSeconds = 0;
+  timer = setInterval(setTimer, 1000);
+  setTimer();
+
+  friend = 0;
+  countFriends();
+  
+  myra = [
+    {x: 140, y: 140},
+  ];
+  // Startar spelet med main()
+  main();
+  // Startar med en myra
+  crea teFriend();*/
+
+function startGame(){
   totalSeconds = 0;
   timer = setInterval(setTimer, 1000);
   setTimer();
@@ -69,7 +85,7 @@ document.addEventListener("click", function(){
   main();
   // Startar med en myra
   createFriend();
-});
+}
 function main() {
   // Om man krashar masken så stoppar den direkt. Och spelar krashljud.
   if (ifGameOver()){

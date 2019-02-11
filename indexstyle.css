@@ -1,30 +1,28 @@
-.page * {
+/* .page {
     color: white;
     font-family: pacifico, cursive;
     box-sizing: border-box;
     font-size: 2rem;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #330136;
-    background-image: linear-gradient(#330136, #5E1742); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  background-color: #330136;
+  background-image: linear-gradient(#330136, #5E1742);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-/* span {
-  padding: 0px 20px 0px 0px;
-  font-family: Open Sans;
-  color: white;
-} */
 
 button {
   background-color: #FF5E35;
@@ -40,208 +38,226 @@ button {
 }
 
 .page a {
-    text-decoration: none;
+  text-decoration: none;
+  font-family: 'Pacifico', serif;
+  font-size: 1.4em;
+  color: white;
 }
 
-.page a:hover{
-    color: #FF5E35; 
+.page a:hover {
+  color: #FF5E35;
+
 }
 
 .page .game {
-    width: 50%;
-    float: left;
-    text-align: center;
-    margin-bottom: 50px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .page .clearfix {
-    clear: both;
+  clear: both;
 }
 
 .page .allgames {
-    max-width: 1200px;
-    margin: auto auto;
+  max-width: 1200px;
+  margin: auto auto;
 }
 
-.page img{
-    width: 60%;
-    height: auto;
-    background-color: rgb(243, 243, 243);
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 12px 10px 14px #330136; 
+.page img {
+  width: 60%;
+  height: auto;
+  background-color: rgb(243, 243, 243);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
 }
 
 footer {
-    background: #330136;
-    background-image: linear-gradient(#962E40,#330135 );
-    width: 100%;
-    padding: 50px;
-    text-align: center;
+  background: #330136;
+  background-image: linear-gradient(#962E40, #330135);
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
 }
 
-.page{
-    position: relative;
-    top: 535px;
+.page {
+  position: relative;
+  top: 450px;
 }
 
 .staggering {
-    width:360px;
-    height:360px;
-    border-radius: 5px;
-    box-shadow: 12px 10px 14px #330136; 
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
 
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
 .Logo,
 h1,
 h2,
 h3,
 h4,
 p,
-a{
-    font-family: 'Pacifico';
+a {
+  font-family: 'Pacifico';
 }
 
 
 .container {
-    padding: 0 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
-
-.wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 .column {
-    width: 100%;
-    min-height: 1px;
-    float: left;
+  width: 100%;
+  min-height: 1px;
+  float: left;
 }
+
 .header {
-    padding: 5px 0px;
-    background: #330136;
-    background-image: linear-gradient(#330136, #962E40);
-    color: #fff;
-    width: 100%;
-    height: 100px;
-    z-index: 100;
-    top: 0;
-  }
-
-  .main-nav {
-      float:right;
-  }
-  .nav>li{
-      float:left;
-      padding: 20px;
-      margin-bottom: 15px;
-      list-style-type: none;
-  }
-
-  .header .main-nav .nav .nav-item {
-    font-weight: normal;
-    margin-right: 30px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .header .main-nav .nav .nav-item a {
-    color: white;
-    font-size: 22px;
-    padding: 15px 10px;
-    text-decoration: none;
-  }
-  .header .main-nav .nav .nav-item a:hover {
-    color: red;
-    background: none;
-  }
-  .header .main-nav .nav .nav-item a:focus {
-    outline: none;
-    background: none;
-  }
-  .Logo{
-      float: left;
-      margin-left: 25px;
-      font-family: 'Pacifico';
-      font-size: 2rem; 
-  }
-
-  .MainBar{ 
-    margin-top: 150px
-  }
-
-  .top{
-      height: 100%;   
-  }
-
-  .raket{
-    z-index: 1;
-    position: absolute;
-  }
-
-  .bgimage{
-    position: absolute;
-  }
-
-  @keyframes tetris {
-      0%, 25%{
-          margin-top: 1%; 
-      }
-      25%, 50%{
-          margin-top: 2%; 
-      }
-      50%, 75%{
-          margin-top: 3%; 
-      }
-      75%, 100%{
-          margin-top: 4%; 
-      }
-  }
-
-  .tetrishover:hover{
-    animation: tetris 4s; 
-  }
-  
-  .ants:hover{
-    z-index: 1; 
-  }
-
-
-  @keyframes bjr {
-    0%, 33%{
-      margin-right: initial; 
-    }
-    33%, 66%{
-      margin-right: 5%; 
-    }
-    66%, 100%{
-      margin-right: initial; 
-    }
-  }
-
-  .bowser{
-      background-color: none; 
-  }
-
-  .bowser:hover{
-      animation: bjr 2s infinite; 
-  }
-
-  @keyframes ssp{
-    
-  }
-  
-.sten:hover{
-  animation: ssp 4s; 
+  padding: 5px 0px;
+  background: #330136;
+  background-image: linear-gradient(#330136, #962E40);
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  top: 0;
 }
 
-.memory:hover{
-    background-image: url(./images/index_memory2.svg); 
+.main-nav {
+  float: right;
+}
+
+.nav>li {
+  float: left;
+  padding: 20px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.header .main-nav .nav .nav-item {
+  font-weight: normal;
+  margin-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header .main-nav .nav .nav-item a {
+  color: white;
+  font-size: 22px;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.header .main-nav .nav .nav-item a:hover {
+  color: red;
+  background: none;
+}
+
+.header .main-nav .nav .nav-item a:focus {
+  outline: none;
+  background: none;
+}
+
+.Logo {
+  float: left;
+  margin-left: 25px;
+  font-family: 'Pacifico';
+  font-size: 2rem;
+}
+
+.MainBar {
+  margin-top: 60px
+}
+
+.top {
+  height: 100%;
+}
+
+.raket {
+  z-index: 1;
+  position: absolute;
+}
+
+.bgimage {
+  position: absolute;
+}
+
+@keyframes tetris {
+
+  0%,
+  25% {
+    margin-top: 1%;
+  }
+
+  25%,
+  50% {
+    margin-top: 2%;
+  }
+
+  50%,
+  75% {
+    margin-top: 3%;
+  }
+
+  75%,
+  100% {
+    margin-top: 4%;
+  }
+}
+
+.tetrishover:hover {
+  animation: tetris 4s;
+}
+
+.ants:hover {
+  z-index: 1;
+}
+
+
+@keyframes bjr {
+
+  0%,
+  33% {
+    margin-right: initial;
+  }
+
+  33%,
+  66% {
+    margin-right: 5%;
+  }
+
+  66%,
+  100% {
+    margin-right: initial;
+  }
+}
+
+.bowser {
+  background-color: none;
+}
+
+.bowser:hover {
+  animation: bjr 2s infinite;
+}
+
+@keyframes ssp {}
+
+.sten:hover {
+  animation: ssp 4s;
+}
+
+.memory:hover {
+  background-image: url(./images/index_memory2.svg);
 }
 
 section {
@@ -270,8 +286,9 @@ section {
   background-color: #eee;
   margin: 0 10px;
 }
+
 .game-container {
-  display:block;
+  display: block;
 
 }
 
@@ -282,24 +299,24 @@ section {
 }
  */
 aside {
+  border-radius: 3px;
+  padding: 3%;
   position: absolute;
   z-index: 1;
-  width: 200px;
-  height: 100%;
-  right: 6%;
-  top:0;
-  background-color: rgb(248, 248, 248);
+  width: 350px;
+  height: 40%;
+  right: 0%;
+  top: 15%;
+  background: linear-gradient(to right, #5e1742 0%, #330136 100%);
   display: block;
+  box-shadow: 10px 10px 50px black;
 }
+
 .game-place {
   margin-top: 20%;
   margin: auto;
-  width:600px;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  width: 600px;
+  height: 600px;
 }
 
 .memory-game {
@@ -309,8 +326,8 @@ aside {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-  background-color:white;
-  border:1px solid #5E1742;
+  background-color: white;
+  border: 1px solid #5E1742;
 }
 
 .memory-card {
@@ -382,25 +399,15 @@ aside {
   margin: 0 auto;
 }
 
-.start-button {
-  margin: auto;
-  width: 100%;
-  height: 35px;
-  background-color: #C9463D;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
+.sidebar {
+  width: 300px;
+  /* float:right; */
+
 }
 
-.sidebar {
-  width:300px;
-  /* float:right; */
-  
-}
 .game-wrapper {
-  width:auto;
+  width: auto;
   display: flex;
-  
 }
 
 .wrapper {
@@ -424,11 +431,6 @@ aside {
   float: left;
 }
 
-#starttext {
-  font-family: 'Pacifico', serif;
-  font-size: 2em;
-}
-
 p,
 span {
   font-family: 'Pacifico', serif;
@@ -450,35 +452,13 @@ span {
   float: left;
 }
 
-/* #container-spel {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 #container-score {
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0% 0% 2% 0%;
 }
 
 #gameCanvas {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-header {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
-  color: #330136;
-  font-family: Pacifico;
+  margin-top: 10%;
+  border-radius: 3px;
+  box-shadow: 20px 20px 50px #5E1742;
 }
