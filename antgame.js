@@ -1,5 +1,12 @@
-// Färger till canvas och mask
+/*  Har läst en tutorial på hur man bygger ett snake-spel med endast javascript. 
+Länken: https://medium.freecodecamp.org/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e
 
+-Bytt ut bilder så att istället för snake är det myror som kryper omkring och rekryterar kompisar. 
+-Lade till antal vänner den rekryterar och antal poäng man får. Dessa sammanställs sedan i en lokalstorage där också alla poäng från respektive spel samlas. 
+-Lade till ljud när den hämtar en kompis och när den krachar.
+*/
+
+// Färger till canvas och mask
 const GAME_SPEED = 100;
 const CANVAS_BORDER_COLOUR = '#FF5E35'
 const CANVAS_BACKGROUND_COLOUR = '#FF5E35'
@@ -23,18 +30,17 @@ let friend = 0;
 let box = 20;
 // Poäng
 let score = 0;
-// När den är true ändrar masken håll
+// När den är true ändrar myran håll
 let changingDirection = false;
-// Food x-coordinate (vilken x-koordinat som maten ligger på)
+// Kompis x-coordinate (vilken x-koordinat som kompisen är på)
 let foodX;
-// Food y-coordinate (vilken y-koordinat som maten ligger på)
+// Kompis y-coordinate (vilken y-koordinat som kompisen är på)
 let foodY;
 // Horizontal hastighet
-let dx = 20; // Masken börjar krypa i x-led
+let dx = 20; // Myran börjar krypa i x-led
 // Vertical hastighet
 let dy = 0;
 
-// Start och stop timer
 
 // Bestämmer storleken på canvas och retunerar en 2dimensionell canvas
 let gameCanvas = document.getElementById("gameCanvas");
@@ -57,20 +63,6 @@ function stopTimer() {
 }
 // Startar spelet
 document.addEventListener("click", startGame());
-/* totalSeconds = 0;
-timer = setInterval(setTimer, 1000);
-setTimer();
-
-friend = 0;
-countFriends();
-  
-myra = [
-  {x: 140, y: 140},
-];
-// Startar spelet med main()
-main();
-// Startar med en myra
-crea teFriend();*/
 
 function startGame() {
   totalSeconds = 0;
@@ -135,7 +127,6 @@ function makingFriends() {
   const didEatFood = myra[0].x === foodX && myra[0].y === foodY;
   if (didEatFood) {
     //countScore(); // Adderar poäng
-    //document.getElementById('score').innerHTML = score; // Visar det på hemsidan
     takeFriend.play();
     createFriend();
     countFriends(); // Skapar nytt äpple på en annan plats efter som masken har ätit upp den.
@@ -171,13 +162,6 @@ function createFriend() {
 };
 
 
-// Räknar antalet kompisar som myran värvar
-/* function countScore(){
-    score = 0;
-  document.getElementById('score').innerHTML = friend*2.5;
-} */
-
-
 function countFriends() {
   antScore = friend * 10;
   let score = document.getElementById('score');
@@ -185,7 +169,7 @@ function countFriends() {
   document.getElementById('friend-count').innerHTML = friend++;
 
 }
-// Loopar ut masken på skärmen
+// Loopar ut myran på canvas
 function drawAnt() {
   myra.forEach(drawAntPart);
 }
