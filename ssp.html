@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-       <h2 class="Logo">Spelsite</h2>
+        <h2 class="Logo">Spelsite</h2>
         <nav id="main-nav" class="main-nav">
 
             <ul class="nav">
@@ -26,23 +26,25 @@
                 <p id="BotChoose">Bot</p>
                 <p id="yourChoice">You</p>
             </div>
-            <div>
-                <button class="ssp-button" onclick="random('Sten')">Sten</button>
-                <button class="ssp-button" onclick="random('Sax')">Sax</button>
-                <button class="ssp-button" onclick="random('Pose')">Påse</button>
+            <div class="button-wrapper">
+                <div class="ssp-buttons">
+                    <button class="ssp-button py15-px70" onclick="random('Sten')">Sten</button>
+                    <button class="ssp-button py15-px70" onclick="random('Sax')">Sax</button>
+                    <button class="ssp-button py15-px70" onclick="random('Pose')">Påse</button>
+                </div>
             </div>
         </div>
     </section>
 
     <aside>
         <p>Sten sax påse</p>
-        <p id="wHappend">Choose your destiny</p> 
+        <p id="wHappend">Choose your destiny</p>
         <p>Score: <span id="Result">0</span></p>
         <hr>
         <p>Tetris: <span id="tetris-score"></span></p>
-            <p>Memory: <span id="memory-score"></span></p>
-            <p>Snake: <span id="snake-score"></span></p>
-            <p>Sten, Sax, Påse: <span id="ssp-score"></span></p>
+        <p>Memory: <span id="memory-score"></span></p>
+        <p>Snake: <span id="snake-score"></span></p>
+        <p>Sten, Sax, Påse: <span id="ssp-score"></span></p>
     </aside>
 
     <footer>

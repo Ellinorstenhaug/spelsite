@@ -25,6 +25,9 @@ a {
   text-decoration: none;
 }
 
+
+
+
 .ssp-button  {
   background-color: #FF5E35;
   color: white;
@@ -287,7 +290,7 @@ aside {
 .game-place {
   margin-top: 20%;
   margin: auto;
-  width: 600px;
+  /* width: 600px; */
   height: 600px;
 }
 
@@ -379,12 +382,40 @@ aside {
   width: auto;
   display: flex;
 }
+.py15-px70 {
+  padding: 15px 70px;  
+}
+
+.white-text {
+  color:white;
+}
+
+
+.ssp-button:hover {
+  background-color:rgb(231, 66, 25);
+}
+
+
+.button-wrapper {
+  width:auto;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .wrapper {
-  margin: auto;
+  margin: 20px auto auto auto;
   display: -ms-flexbox;
   display: flex;
   width: 60%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.mario-wrapper {
+  margin: 30px auto auto auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -673,6 +704,10 @@ animation: tetris 4s infinite;
   font-family: monospace;
 }
 
+.container-spel {
+  margin:auto;
+}
+
 .mario-game {
   position: relative;
   background-image: url('images/images/gamebackground.png');
@@ -782,4 +817,9 @@ filter: alpha(opacity=0);
 }
 #tet:hover {
   animation: tetris 4s;
+}
+
+.relative {
+  position:relative;
+  bottom:0;
 }
