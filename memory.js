@@ -1,3 +1,10 @@
+/*
+För att bygga detta spel har jag följt (till viss del) denna tutorial https://www.youtube.com/watch?v=ZniVgo8U7ek. 
+
+Har lagt till winfunktionen, samt manipulerat funktioner för att lägga till andra effekter (som poängsystem etc). Styling osv är också ändrat.
+
+Har även byggt webstorage.js för att spara in slutpoängen i webbläsarens minne (som går via scoreboard.js).  
+*/
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
