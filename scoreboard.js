@@ -1,3 +1,5 @@
+/*För att slippa onödig återupprepning hämtar vi alla poäng och sparar ner de i variabler här, som sedan skrivs ut i domen */
+
 let memory = 'Memory'
 let memoryScore = webStorage.getScore(memory);
 let tetris = "Tetris";
