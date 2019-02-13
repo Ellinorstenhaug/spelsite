@@ -89,11 +89,13 @@ footer {
 }
 
 .staggering {
-  width: 360px;
-  height: 360px;
+  width:360px;
+  height:360px;
   border-radius: 5px;
-  box-shadow: 12px 10px 14px #330136;
-
+  box-shadow: 12px 10px 14px #330136; 
+  position: absolute;
+  right: 24%;
+  top: 765px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
@@ -460,4 +462,170 @@ span {
   margin-top: 10%;
   border-radius: 3px;
   box-shadow: 20px 20px 50px #5E1742;
+}
+
+/* sofie */
+
+#bowser{
+  background-color: transparent; 
+  right: 24%;
+  position: absolute;
+  height: 362px;
+width: auto;
+box-shadow: none; 
+}
+
+#bowtext{
+position: absolute;
+top: 388px;
+right: 43%; 
+}
+
+#background{
+right: 24%;
+position: absolute;
+height: 362px;
+width: auto;
+
+}
+
+#bowser:hover{
+  animation: bjr 2s infinite; 
+}
+
+@keyframes ssp{
+
+}
+
+#sten:hover{
+animation: ssp 4s; 
+}
+
+#sten{
+position: absolute;
+right: 24%; 
+height: 362px;
+width: auto;
+top: 390px;
+}
+
+#ssp{
+position: absolute;
+right: 24%; 
+height: 362px;
+width: auto;
+top: 390px;
+background-color: transparent; 
+box-shadow: none;
+}
+
+@keyframes ssp {
+0%, 33%{
+top: 390px; 
+}
+33%, 66%{
+top: 450px; 
+}
+66%, 100%{
+top: 390px; 
+}
+}
+
+#ssp:hover{
+animation: ssp 4s infinite; }
+
+#stentext{
+position: absolute;
+top: 775px;
+right: 43%;
+}
+
+#memory:hover{
+background-image: url(./images/index_memory2.svg); 
+}
+
+#memory{
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%; 
+}
+
+#memtext{
+position: absolute;
+top: 388px;
+left: 45%; 
+}
+
+@keyframes tetris {
+  0%, 25%{
+      margin-top: 1%; 
+  }
+  25%, 50%{
+      margin-top: 2%; 
+  }
+  50%, 75%{
+      margin-top: 3%; 
+  }
+  75%, 100%{
+      margin-top: 4%; 
+  }
+}
+
+#tet:hover{
+animation: tetris 4s; 
+}
+
+#tetris{
+position: absolute;
+height: 363px;
+width: auto;
+left: 24%;
+top: 765px;
+}
+
+#tet{
+position: absolute;
+height: 363px;
+width: auto;
+left: 24%;
+top: 765px;
+background-color: transparent; 
+box-shadow: none; 
+}
+
+#tettext{
+position: absolute;
+top: 1150px;
+left: 49%;
+}
+
+#ants{ 
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%;
+top: 390px;
+}
+
+
+#ant{
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%;
+top: 390px;
+}
+
+#anttext{
+position: absolute;
+top: 775px;
+left: 40%; 
+}
+
+#stagtext{
+  position: absolute;
+    top: 1150px;
+    right: 37%; 
+    margin-bottom: 149px; 
 }
