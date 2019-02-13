@@ -1,0 +1,466 @@
+/* .page {
+    color: white;
+    font-family: pacifico, cursive;
+    box-sizing: border-box;
+    font-size: 2rem;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #330136;
+  background-image: linear-gradient(#330136, #5E1742);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #FF5E35;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.page a {
+  text-decoration: none;
+  font-family: 'Pacifico', serif;
+  font-size: 1.4em;
+  color: white;
+}
+
+.page a:hover {
+  color: #FF5E35;
+
+}
+
+.page .game {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page .clearfix {
+  clear: both;
+}
+
+.page .allgames {
+  max-width: 1200px;
+  margin: auto auto;
+}
+
+.page img {
+  width: 60%;
+  height: auto;
+  background-color: rgb(243, 243, 243);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
+}
+
+footer {
+  background: #330136;
+  background-image: linear-gradient(#962E40, #330135);
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+.page {
+  position: relative;
+  top: 450px;
+}
+
+.staggering {
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
+.Logo,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: 'Pacifico';
+}
+
+
+.container {
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.column {
+  width: 100%;
+  min-height: 1px;
+  float: left;
+}
+
+.header {
+  padding: 5px 0px;
+  background: #330136;
+  background-image: linear-gradient(#330136, #962E40);
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  top: 0;
+}
+
+.main-nav {
+  float: right;
+}
+
+.nav>li {
+  float: left;
+  padding: 20px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.header .main-nav .nav .nav-item {
+  font-weight: normal;
+  margin-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header .main-nav .nav .nav-item a {
+  color: white;
+  font-size: 22px;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.header .main-nav .nav .nav-item a:hover {
+  color: red;
+  background: none;
+}
+
+.header .main-nav .nav .nav-item a:focus {
+  outline: none;
+  background: none;
+}
+
+.Logo {
+  float: left;
+  margin-left: 25px;
+  font-family: 'Pacifico';
+  font-size: 2rem;
+}
+
+.MainBar {
+  margin-top: 60px
+}
+
+.top {
+  height: 100%;
+}
+
+.raket {
+  z-index: 1;
+  position: absolute;
+}
+
+.bgimage {
+  position: absolute;
+}
+
+@keyframes tetris {
+
+  0%,
+  25% {
+    margin-top: 1%;
+  }
+
+  25%,
+  50% {
+    margin-top: 2%;
+  }
+
+  50%,
+  75% {
+    margin-top: 3%;
+  }
+
+  75%,
+  100% {
+    margin-top: 4%;
+  }
+}
+
+.tetrishover:hover {
+  animation: tetris 4s;
+}
+
+.ants:hover {
+  z-index: 1;
+}
+
+
+@keyframes bjr {
+
+  0%,
+  33% {
+    margin-right: initial;
+  }
+
+  33%,
+  66% {
+    margin-right: 5%;
+  }
+
+  66%,
+  100% {
+    margin-right: initial;
+  }
+}
+
+.bowser {
+  background-color: none;
+}
+
+.bowser:hover {
+  animation: bjr 2s infinite;
+}
+
+@keyframes ssp {}
+
+.sten:hover {
+  animation: ssp 4s;
+}
+
+.memory:hover {
+  background-image: url(./images/index_memory2.svg);
+}
+
+section {
+  max-width: 1200px;
+  margin: auto auto;
+  display: flex;
+  width: auto;
+  /* flex-wrap: wrap; */
+}
+
+.game {
+  width: 1200px;
+  height: auto;
+  /* background-color: rgb(228, 196, 196); */
+  position: relative;
+}
+
+.more-games {
+  justify-content: center;
+  padding: 20px;
+}
+
+.small-game {
+  width: 30%;
+  height: 200px;
+  background-color: #eee;
+  margin: 0 10px;
+}
+
+.game-container {
+  display: block;
+
+}
+
+/* .wrapper {
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+ */
+aside {
+  border-radius: 3px;
+  padding: 3%;
+  position: absolute;
+  z-index: 1;
+  width: 350px;
+  height: 40%;
+  right: 0%;
+  top: 15%;
+  background: linear-gradient(to right, #5e1742 0%, #330136 100%);
+  display: block;
+  box-shadow: 10px 10px 50px black;
+}
+
+.game-place {
+  margin-top: 20%;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+}
+
+.memory-game {
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  background-color: white;
+  border: 1px solid #5E1742;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  position: relative;
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform(0.2s)
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  /* background:rgb(255, 255, 255); */
+  background-color: #330136;
+  /* border: 1px  solid rgb(8, 66, 66); */
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  background-color: #5E1742;
+}
+
+#winner {
+  display: block;
+}
+
+.win {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 80px 0;
+}
+
+.win-heading {
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  height: auto;
+}
+
+.heading {
+  padding-bottom: 20px;
+  margin: 20px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 300px;
+  /* float:right; */
+
+}
+
+.game-wrapper {
+  width: auto;
+  display: flex;
+}
+
+.wrapper {
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.column {
+  margin: auto;
+  color: #330136;
+}
+
+.playground {
+  padding: 20% 0% 0% 0%;
+  margin: auto;
+  width: 100%;
+  float: left;
+}
+
+p,
+span {
+  font-family: 'Pacifico', serif;
+  font-size: 1.4em;
+  color: white;
+}
+
+
+#yourChoice {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+
+#BotChoose {
+  text-align: center;
+  width: 300px;
+  float: left;
+}
+
+#container-score {
+  height: auto;
+  padding: 0% 0% 2% 0%;
+}
+
+#gameCanvas {
+  margin-top: 10%;
+  border-radius: 3px;
+  box-shadow: 20px 20px 50px #5E1742;
+}
+

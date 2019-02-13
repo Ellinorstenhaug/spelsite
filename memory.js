@@ -6,6 +6,7 @@ let firstCard, secondCard;
 let count = 0;
 let clickCount = 0;
 
+
 (function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
@@ -106,18 +107,20 @@ function stopTimer() {
     interval == totalSeconds;
 }
 
+
+
 let div = document.getElementById("winner");
 div.style.display = "none";
 
 function win() {
     div.style.display = "block";
     stopTimer();
-    // let clickPoint = 36 - clickCount;
-    // let timePoint = 60 - totalSeconds;
 
     //TODO
-    let point = totalSeconds * clickCount;
+    point = totalSeconds * clickCount;
+    webStorage.saveScore(point, memory);
     document.getElementById('points').innerHTML = point;
+    memoryScore.innerHTML = point;
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));

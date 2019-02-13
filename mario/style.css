@@ -3,7 +3,7 @@ body {
     font-size: 20px;
   }
   
-  .game {
+  .mario-game {
     position: relative;
     background-image: url('images/gamebackground.png');
     background-size: 100% 100%;
@@ -170,7 +170,7 @@ body {
     animation: move 2s infinite; 
     animation-play-state: paused; 
   }
-
+/* 
   @keyframes bjr {
     0%, 33%{
       margin-right: initial; 
@@ -181,7 +181,7 @@ body {
     66%, 100%{
       margin-right: initial; 
     }
-  }
+  } */
 
   #bjr{
     animation: bjr 2s infinite; 
