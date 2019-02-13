@@ -9,6 +9,14 @@ function bgm(){
   document.getElementById("startplay").style.visibility = "hidden";  
 }
 
+/* Kollade på en tutorial för Pokémon och blev inspirerad att göra den här.
+Hur den byter tur och slumpmässigt väljer motståndarens attack är densamma. 
+Har lagt till ljud, ändrat sannolikheten för att träffa/missa, samt texter.
+Gjort nya attacker, olika starka. 
+La även till animationer för att tydligt visa vem som attackerar (de rör sig sidleds). 
+När man vinner eller förlorar pausar musiken och spelar upp 
+seger/förlust musik + ljud. 
+Eftersom Chrome blockar ljud on load fick det även bli en startknapp.*/
 
 /* Mario's move*/
 function fireball() {
