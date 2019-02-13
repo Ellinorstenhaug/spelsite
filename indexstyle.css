@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 * {
   padding: 0;
   margin: 0;
@@ -87,15 +88,11 @@ footer {
   text-align: center;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
-
 .Logo,
 h1,
 h2,
 h3,
 h4,
-p,
 a {
   font-family: 'Pacifico';
 }
@@ -278,7 +275,6 @@ aside {
   position: absolute;
   z-index: 1;
   width: 350px;
-  height: 40%;
   right: 0%;
   top: 15%;
   background: linear-gradient(to right, #5e1742 0%, #330136 100%);
@@ -408,7 +404,7 @@ aside {
 p,
 span {
   font-family: 'Pacifico', serif;
-  font-size: 1.4em;
+  font-size: 1em;
   color: white;
 }
 
@@ -458,6 +454,12 @@ span {
   width: 314px;
 }
 
+#background{
+right: 24%;
+position: absolute;
+height: 362px;
+width: auto;
+}
 .player {
   position: relative;
   height: 192px;
@@ -477,6 +479,9 @@ span {
   width: 439px;
 }
 
+#sten:hover{
+animation: ssp 4s;
+} 
 .box {
   padding: 8px;
   background: #333;
@@ -493,6 +498,7 @@ span {
   float: left;
   font-size: 24px;
   width: 50%;
+  font-family: monospace;
 }
 
 .box .continue {
@@ -571,13 +577,32 @@ span {
 }
 
 .stats .hp-count:before {
-  content: 'HP: '
+  content: 'HP: ';
+  font-family: monospace;
 }
 
 .stats .hp-count {
   float: right;
 }
 
+#memory2{
+  position: absolute;
+  height: 362px;
+  width: auto;
+  left: 24%;
+  opacity: 0;
+}
+
+#memory2:hover{
+  opacity: 1;
+  box-shadow: none;
+}
+
+#memtext{
+position: absolute;
+top: 388px;
+left: 45%; 
+}
 .stats .name {
   font-weight: bold;
 }
@@ -628,6 +653,10 @@ span {
   animation-play-state: paused;
 }
 
+#tet:hover{
+animation: tetris 4s infinite;
+}
+
 #startplay {
   position: absolute;
   background-color: #000000a3;
@@ -636,6 +665,7 @@ span {
   z-index: 1;
   padding-right: 360px;
   font-size: 20px;
+  font-family: monospace;
 }
 
 .mario-game {
@@ -661,6 +691,20 @@ span {
 }
 
 
+#ants{ 
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%;
+top: 390px;
+opacity: 0;
+filter: alpha(opacity=0);
+}
+
+#ants:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
 @keyframes ssp {
   0%,
   33% {
