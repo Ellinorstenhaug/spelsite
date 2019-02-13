@@ -465,3 +465,94 @@ span {
 }
 
 /* sofie */
+
+#bowser{
+  background-color: transparent; 
+  right: 24%;
+  position: absolute;
+  height: 362px;
+width: auto;
+box-shadow: none; 
+}
+
+#bowtext{
+position: absolute;
+top: 388px;
+right: 29%; 
+}
+
+#background{
+right: 24%;
+position: absolute;
+height: 362px;
+width: auto;
+
+}
+
+#bowser:hover{
+  animation: bjr 2s infinite; 
+}
+
+@keyframes ssp{
+
+}
+
+#sten:hover{
+animation: ssp 4s; 
+}
+
+#sten{
+position: absolute;
+right: 24%; 
+height: 362px;
+width: auto;
+top: 461px;
+}
+
+#ssp{
+position: absolute;
+right: 24%; 
+height: 362px;
+width: auto;
+top: 461px;
+background-color: transparent; 
+box-shadow: none;
+}
+
+@keyframes ssp {
+0%, 33%{
+top: 461px; 
+}
+33%, 66%{
+top: 500px; 
+}
+66%, 100%{
+top: 461px; 
+}
+}
+
+#ssp:hover{
+animation: ssp 4s infinite; }
+
+#stentext{
+position: absolute;
+top: 850px;
+right: 28%; 
+}
+
+#memory:hover{
+background-image: url(./images/index_memory2.svg); 
+}
+
+#memory{
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%; 
+}
+
+#memtext{
+position: absolute;
+top: 388px;
+left: 30%; 
+}
