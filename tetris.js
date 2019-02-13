@@ -1,3 +1,12 @@
+/*
+För att bygga detta spel har jag följt (till viss del) denna tutorial https://www.youtube.com/watch?v=H2aW5V46khA&t=2709s. 
+
+Har lagt till winfunktionen, samt manipulerat funktioner för att lägga till andra effekter (som poängsystem etc). Styling osv är också ändrat.
+
+Har även byggt webstorage.js för att spara in slutpoängen i webbläsarens minne (som går via scoreboard.js).  
+*/
+
+
 const canvas = document.getElementById('tetris-game');
 const context = canvas.getContext('2d');
 let point = 0;
