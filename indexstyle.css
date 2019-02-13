@@ -296,8 +296,6 @@ aside {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-  background-color: white;
-  border: 1px solid #5E1742;
 }
 
 .memory-card {
