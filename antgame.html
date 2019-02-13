@@ -35,14 +35,16 @@
         </div>
     </section>
     <aside>
-        <span>Ants with friends!</span>
+        <p>Ants with friends!</p>
         <button onclick="startGame()" class="btnstart">Starta spel!</button> <br>
-        <span>Time:</span>
-        <span id="timer">00000</span> <br>
-        <span>Friends collected:</span>
-        <span id="friend-count">__</span> <br>
-        <span>Score:</span>
-        <span id="score">0</span> <br>
+        <p>Time: <span id="timer">00000</span></p>
+        <p>Friends collected: <span id="friend-count">__</span> </p>
+        <p>Score: <span id="score">0</span></p>
+        <hr>
+        <p>Tetris: <span id="tetris-score"></span></p>
+        <p>Memory: <span id="memory-score"></span></p>
+        <p>Snake: <span id="snake-score"></span></p>
+        <p>Sten, Sax, Påse: <span id="ssp-score"></span></p>
         <!-- <div class="sidebar"> -->
         <!-- <h1>Tid: <span id="minutes">00</span>:<span id="seconds">00</span> </h1>
                     <h1>Antal försök: <span id="numberOfTries"></span> </h1> -->
@@ -53,6 +55,8 @@
     <footer>
         <p>Mikaela, Ellinor, Sofie och Denis</p>
     </footer>
+    <script src="webstorage.js"></script>
+    <script src="scoreboard.js"></script>
     <script src="antgame.js"></script>
 </body>
 

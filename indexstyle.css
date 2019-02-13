@@ -1,14 +1,10 @@
-/* .page {
-    color: white;
-    font-family: pacifico, cursive;
-    box-sizing: border-box;
-    font-size: 2rem;
-} */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
@@ -22,6 +18,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.monospace body {
+  font-family: monospace;
 }
 
 button {
@@ -81,6 +81,8 @@ footer {
   width: 100%;
   padding: 2% 0% 2% 0%;
   text-align: center;
+  /* position: fixed;
+  bottom: 0%; */
 }
 
 .page {
@@ -88,24 +90,11 @@ footer {
   top: 450px;
 }
 
-.staggering {
-  width:360px;
-  height:360px;
-  border-radius: 5px;
-  box-shadow: 12px 10px 14px #330136; 
-  position: absolute;
-  right: 24%;
-  top: 765px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
-
 .Logo,
 h1,
 h2,
 h3,
 h4,
-p,
 a {
   font-family: 'Pacifico';
 }
@@ -189,9 +178,9 @@ a {
   position: absolute;
 }
 
-.bgimage {
+/* .bgimage {
   position: absolute;
-}
+} */
 
 @keyframes tetris {
 
@@ -305,7 +294,6 @@ aside {
   position: absolute;
   z-index: 1;
   width: 350px;
-  height: 40%;
   right: 0%;
   top: 15%;
   background: linear-gradient(to right, #5e1742 0%, #330136 100%);
@@ -435,7 +423,7 @@ aside {
 p,
 span {
   font-family: 'Pacifico', serif;
-  font-size: 1.4em;
+  font-size: 1em;
   color: white;
 }
 
@@ -464,168 +452,407 @@ span {
   box-shadow: 20px 20px 50px #5E1742;
 }
 
+
+
+.opponent {
+  position: relative;
+  height: 300px;
+}
+
+.opponent .stats {
+  position: absolute;
+  top: 92px;
+  left: 85px;
+  width: 320px;
+}
+
+.opponent .character {
+  position: absolute;
+  bottom: -86px;
+  right: -37px;
+  width: 314px;
+}
+
+.player {
+  position: relative;
+  height: 192px;
+}
+
+.player .stats {
+  position: absolute;
+  top: 103px;
+  right: 40px;
+  width: 320px;
+}
+
+.player .character {
+  position: absolute;
+  left: 35px;
+  bottom: 10px;
+  width: 439px;
+}
+
+.box {
+  padding: 8px;
+  background: #333;
+  border: 3px solid black;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+  height: 120px;
+  width: 784px;
+}
+
+.box .message {
+  position: relative;
+  float: left;
+  font-size: 24px;
+  width: 50%;
+  font-family: monospace;
+}
+
+.box .continue {
+  position: absolute;
+  margin-top: 30px;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.box .continue button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid #888;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  padding: 16px;
+  outline: none !important;
+}
+
+.box .continue button:hover {
+  background: #777;
+  border-color: #999;
+}
+
+.box .continue button:active {
+  background: #555;
+  border-color: #666;
+}
+
+.box .actions {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.box .actions button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid #888;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  padding: 16px;
+  width: calc(50% - 8px);
+  height: calc(50% - 8px);
+  outline: none !important;
+}
+
+.box .actions button:hover {
+  background: #777;
+  border-color: #999;
+}
+
+.box .actions button:active {
+  background: #555;
+  border-color: #666;
+}
+
+.stats {
+  background: #ffffff8c;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 12px;
+}
+
+.stats .hp-count:before {
+  content: 'HP: ';
+  font-family: monospace;
+}
+
+.stats .hp-count {
+  float: right;
+}
+
+.stats .name {
+  font-weight: bold;
+}
+
+@keyframes move {
+
+  0%,
+  33% {
+    margin-left: initial;
+  }
+
+  33%,
+  66% {
+    margin-left: 5%;
+  }
+
+  66%,
+  100% {
+    margin-left: initial;
+  }
+}
+
+#mario {
+  animation: move 2s infinite;
+  animation-play-state: paused;
+}
+
+@keyframes Abjr {
+
+  0%,
+  33% {
+    margin-right: initial;
+  }
+
+  33%,
+  66% {
+    margin-right: 5%;
+  }
+
+  66%,
+  100% {
+    margin-right: initial;
+  }
+}
+
+#bjr {
+  animation: Abjr 2s infinite;
+  animation-play-state: paused;
+}
+
+#startplay {
+  position: absolute;
+  background-color: #000000a3;
+  padding: 297px;
+  color: white;
+  z-index: 1;
+  padding-right: 360px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.mario-game {
+  position: relative;
+  background-image: url('images/images/gamebackground.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  border-radius: 8px 8px 0 0;
+  height: 480px;
+  width: 800px;
+}
+
 /* sofie */
 
-#bowser{
-  background-color: transparent; 
+#bowser {
+  background-color: transparent;
   right: 24%;
   position: absolute;
   height: 362px;
-width: auto;
-box-shadow: none; 
+  width: auto;
+  box-shadow: none;
 }
 
-#bowtext{
-position: absolute;
-top: 388px;
-right: 43%; 
+#bowtext {
+  position: absolute;
+  top: 388px;
+  right: 43%;
 }
 
-#background{
-right: 24%;
-position: absolute;
-height: 362px;
-width: auto;
-
-}
-
-#bowser:hover{
-  animation: bjr 2s infinite; 
-}
-
-@keyframes ssp{
+#background {
+  right: 24%;
+  position: absolute;
+  height: 362px;
+  width: auto;
 
 }
 
-#sten:hover{
-animation: ssp 4s; 
+#bowser:hover {
+  animation: bjr 2s infinite;
 }
 
-#sten{
-position: absolute;
-right: 24%; 
-height: 362px;
-width: auto;
-top: 390px;
-}
+@keyframes ssp {}
 
-#ssp{
-position: absolute;
-right: 24%; 
-height: 362px;
-width: auto;
-top: 390px;
-background-color: transparent; 
-box-shadow: none;
+#sten:hover {
+  animation: ssp 4s;
 }
 
 @keyframes ssp {
-0%, 33%{
-top: 390px; 
-}
-33%, 66%{
-top: 450px; 
-}
-66%, 100%{
-top: 390px; 
-}
-}
 
-#ssp:hover{
-animation: ssp 4s infinite; }
+  0%,
+  33% {
+    top: 390px;
+  }
 
-#stentext{
-position: absolute;
-top: 775px;
-right: 43%;
-}
+  33%,
+  66% {
+    top: 450px;
+  }
 
-#memory:hover{
-background-image: url(./images/index_memory2.svg); 
-}
-
-#memory{
-position: absolute;
-height: 362px;
-width: auto;
-left: 24%; 
-}
-
-#memtext{
-position: absolute;
-top: 388px;
-left: 45%; 
+  66%,
+  100% {
+    top: 390px;
+  }
 }
 
 @keyframes tetris {
-  0%, 25%{
-      margin-top: 1%; 
+
+  0%,
+  25% {
+    margin-top: 1%;
   }
-  25%, 50%{
-      margin-top: 2%; 
+
+  25%,
+  50% {
+    margin-top: 2%;
   }
-  50%, 75%{
-      margin-top: 3%; 
+
+  50%,
+  75% {
+    margin-top: 3%;
   }
-  75%, 100%{
-      margin-top: 4%; 
+
+  75%,
+  100% {
+    margin-top: 4%;
   }
 }
 
-#tet:hover{
-animation: tetris 4s; 
+#ssp:hover {
+  animation: ssp 4s infinite;
 }
 
-#tetris{
-position: absolute;
-height: 363px;
-width: auto;
-left: 24%;
-top: 765px;
-}
-
-#tet{
-position: absolute;
-height: 363px;
-width: auto;
-left: 24%;
-top: 765px;
-background-color: transparent; 
-box-shadow: none; 
-}
-
-#tettext{
-position: absolute;
-top: 1150px;
-left: 49%;
-}
-
-#ants{ 
-position: absolute;
-height: 362px;
-width: auto;
-left: 24%;
-top: 390px;
-}
-
-
-#ant{
-position: absolute;
-height: 362px;
-width: auto;
-left: 24%;
-top: 390px;
-}
-
-#anttext{
-position: absolute;
-top: 775px;
-left: 40%; 
-}
-
-#stagtext{
+#stentext {
   position: absolute;
-    top: 1150px;
-    right: 37%; 
-    margin-bottom: 149px; 
+  top: 775px;
+  right: 43%;
+}
+
+#memory:hover {
+  background-image: url(./images/index_memory2.svg);
+}
+
+#memory {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+}
+
+#memtext {
+  position: relative;
+  top: 388px;
+  left: 45%;
+}
+
+
+#tet:hover {
+  animation: tetris 4s;
+}
+
+#tetris {
+  position: relative;
+  height: 363px;
+  width: auto;
+  left: 24%;
+  top: 765px;
+}
+
+#tet {
+  /* position: absolute; */
+  height: 363px;
+  width: auto;
+  left: 24%;
+  top: 765px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#tettext {
+  position: relative;
+  top: 1150px;
+  left: 49%;
+}
+
+#ants {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+  top: 390px;
+}
+
+
+#ant {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+  top: 390px;
+}
+
+#anttext {
+  position: relative;
+  top: 775px;
+  left: 40%;
+}
+
+#stagtext {
+  position: relative;
+  top: 1150px;
+  right: 37%;
+  margin-bottom: 149px;
+}
+
+#sten {
+  position: relative;
+  right: 24%;
+  height: 362px;
+  width: auto;
+  top: 390px;
+}
+
+#ssp {
+  position: relative;
+  right: 24%;
+  height: 362px;
+  width: auto;
+  top: 390px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.staggering {
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
+  position: relative;
+  right: 24%;
+  top: 765px;
 }

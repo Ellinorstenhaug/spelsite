@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Save the Princess!</title>
+  <link rel="stylesheet" href="indexstyle.css" />
+  <!-- <style>
+  body{
+    font-family: monospace;
+  }
+  span, p {
+    font-family: monospace;
+  }
+  </style> -->
+</head>
+
+<body>
+  <header class="header">
+    <h2 class="Logo">Spelsite</h2>
+    <nav id="main-nav" class="main-nav">
+
+      <ul class="nav">
+        <li class="nav-item"> <a href="index.html" target="_blank">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+  <section class="game">
+    <div class="wrapper">
+      <div class="game-place">
+        <div id="container-spel">
+
+
+          <div class="mario-game">
+            <div id="startplay" onclick="bgm()">Press to Play</div>
+            <div class="opponent">
+              <div class="stats">
+                <div class="top">
+                  <div class="name">
+                    Bowser Jr
+                  </div>
+                  <div id="bowserHP" class="hp-count">100</div>
+                </div>
+              </div>
+              <img id="bjr" class="character" src="images/images/bowserjr2.png" alt="A happy Bowser Junior" />
+            </div>
+            <div class="player">
+              <div class="stats">
+                <div class="top">
+                  <div class="name">
+                    Mario
+                  </div>
+                  <div id="marioHP" class="hp-count">100</div>
+                </div>
+              </div>
+              <img id="mario" class="character" src="images/images/mario.png" alt="Mario back" />
+            </div>
+          </div>
+          <div class="box">
+            <div id="message" class="message">
+              What should Mario do?
+            </div>
+            <div class="actions">
+              <button onclick="fireball()">Fireball</button>
+              <button onclick="spinthrow()">Spin Throw</button>
+              <button onclick="plummerpunch()">Plummer Punch</button>
+              <button onclick="jumpon()">Jump On</button>
+            </div>
+            <div class="continue">
+              <button onclick="nextturn()">Continue</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+      <p>Mikaela, Ellinor, Sofie och Denis</p>
+  </footer>
+  <script src="mario.js"></script>
+</body>
+
+</html>

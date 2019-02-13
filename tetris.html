@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>Tetris</title>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h2 class="Logo">Spelsite</h2>
+        <nav id="main-nav" class="main-nav">
+
+            <ul class="nav">
+                <li class="nav-item"> <a href="index.html" target="_blank">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="game">
+        <div class="wrapper">
+            <div class="game-place">
+                <div id="container-spel">
+                    <canvas id="tetris-game" width="240px" height="400"></canvas>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <span>Ants with friends!</span>
+
+        <h1>Poäng: <span id="tetris-points"></span></h1>
+        <h1>Tetris: <span id="tetris-score"></span></h1>
+        <h1>Memory: <span id="memory-score"></span></h1>
+        <h1>Snake: <span id="snake-score"></span></h1>
+        <h1>Sten, Sax, Påse: <span id="ssp-score"></span></h1>
+    </aside>
+
+    <script src="webstorage.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="tetris.js"></script>
+
+
+</body>
+
+</html>
