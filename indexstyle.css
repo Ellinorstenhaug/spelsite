@@ -442,6 +442,12 @@ span {
   color: white;
 }
 
+.index-font {
+  font-family: 'Pacifico', serif;
+  font-size: 3em;
+  color: white;
+}
+
 
 #yourChoice {
   text-align: center;
