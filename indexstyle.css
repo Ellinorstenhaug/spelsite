@@ -556,3 +556,69 @@ position: absolute;
 top: 388px;
 left: 30%; 
 }
+
+@keyframes tetris {
+  0%, 25%{
+      margin-top: 1%; 
+  }
+  25%, 50%{
+      margin-top: 2%; 
+  }
+  50%, 75%{
+      margin-top: 3%; 
+  }
+  75%, 100%{
+      margin-top: 4%; 
+  }
+}
+
+#tet:hover{
+animation: tetris 4s; 
+}
+
+#tetris{
+position: absolute;
+height: 363px;
+width: auto;
+left: 24%;
+top: 924px;
+}
+
+#tet{
+position: absolute;
+height: 363px;
+width: auto;
+left: 24%;
+top: 924px;
+background-color: transparent; 
+box-shadow: none; 
+}
+
+#tettext{
+position: absolute;
+top: 1320px;
+left: 32%;
+}
+
+#ants{ 
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%;
+top: 461px;
+}
+
+
+#ant{
+position: absolute;
+height: 362px;
+width: auto;
+left: 24%;
+top: 461px;
+}
+
+#anttext{
+position: absolute;
+top: 850px;
+left: 27%; 
+}
