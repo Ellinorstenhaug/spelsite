@@ -1,111 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="indexstyle.css">
     <title>Home</title>
 </head>
+
 <body>
+    <header class="header">
+        <h2 class="Logo">Spelsite</h2>
+        <nav id="main-nav" class="main-nav">
+
+            <ul class="nav">
+                <li class="nav-item"> <a href="index.html" target="_blank">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="MainBar">
+        <img class="raket" src="images/raket-27.svg" width="350px" ;>
+        <img class="bgimage" src="./images/index-14.svg" alt="background">
+    </div>
+
     <div class="page">
-        <style>
-            *{
-                color: #FF5E35; 
-                font-family: 'Open Sans', sans-serif;
-                box-sizing: border-box; 
-            }
 
-            body{
-                background-color: #330136; 
-                margin: 0; 
-                padding: 0; 
-            }
+        <div class="allgames">
+            <div class="game">
+                <a href="memory.html"><img class="memory" src="./images/index_memory1.svg" alt="memory standard"></a><br>
+                <a href="memory.html">Memory</a>
+            </div>
 
-            a{
-                text-decoration: none; 
-            }
+            <div class="game" class="mario">
+                <a href="./mario/nintendo.html"> <img class="bowser" src="./images/ikoner_spel-17.svg" alt="mario battle"></a><br>
+                <a href="./mario/nintendo.html">Mario Battle</a>
+            </div>
 
-            .game{
-                width: 50%; 
-                float: left; 
-                text-align: center; 
-                margin-bottom: 50px; 
-            }
+            <div class="game">
+                <a href="./antgame.html"><img class="ants" src="./images/ikoner_spel-18.svg" alt="ant friends"></a><br>
+                <a href="./antgame.html">Ant with Friends</a>
+            </div>
 
-            .clearfix{
-                clear: both;
-            }
+            <div class="game">
+                <a href="ssp.html"><img class="sten" src="./images/ikoner_spel-19.svg" alt="rock paper scissors"></a><br>
+                <a href="ssp.html">Sten sax påse</a>
+            </div>
 
-            .allgames{
-                max-width: 1200px; 
-                margin: auto auto; 
-            }
-
-            img{
-                width: 60%; 
-                height: auto; 
-                background-color: rgb(243, 243, 243); 
-                margin-bottom: 10px; 
-            }
+            <div class="game">
+                <a href="./Tetris/index.html"><img class="tetrishover" src="./images/ikoner_spel-20.svg" alt="tetris"></a><br>
+                <a href="./Tetris/index.html">Tetris</a>
+            </div>
 
 
-            footer{
-                background-color: #5E1742; 
-                width: 100%; 
-                padding: 50px; 
-                text-align: center; 
-            }
-            .staggering {
-                width:360px;
-                height:360px;
-            }
-            
-        </style>
-        
-    <div class="allgames">
-        <div class="game">
-            <a href="./Memory/index.html"><img src="./images/ikoner_spel-16.svg" alt="memory"></a><br>
-            <a href="./Memory/index.html">Memory</a>
+            <div class="game">
+                <a href="http://www.staggeringbeauty.com/">
+                    <iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" class="staggering"></iframe>
+                    <!-- <img src="./images/ikoner_spel-20.svg" alt="staggering beauty"> -->
+                </a><br>
+                <a href="http://www.staggeringbeauty.com/">Staggering Beauty</a>
+            </div>
+
+            <div class="clearfix"></div>
+
         </div>
-        
-        <div class="game">
-            <a href="./mario/nintendo.html"><img src="./images/ikoner_spel-17.svg" alt="mario battle"></a><br>
-            <a href="./mario/nintendo.html">Mario Battle</a>
-        </div>
-        
-        <div class="game">
-            <a href="./antGame/snake.html"><img src="./images/ikoner_spel-18.svg" alt="ant friends"></a><br>
-            <a href="./antGame/snake.html">Ant with Friends</a>
-        </div>
-        
-        <div class="game">
-            <a href="./FrontEndProjektr/FirstCase/index.html"><img src="./images/ikoner_spel-19.svg" alt="rock paper scissors"></a><br>
-            <a href="./FrontEndProjektr/FirstCase/index.html">Sten sax påse</a>
-        </div>
-        
-    <div class="game">
-        <a href="./Tetris/index.html"><img src="./images/ikoner_spel-20.svg" alt="tetris"></a><br>
-        <a href="./Tetris/index.html">Tetris</a>
-    </div>
-    
-    <div class="game">
-        <a href="http://www.staggeringbeauty.com/">
-            <iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" class="staggering"></iframe>
-            <!-- <img src="./images/ikoner_spel-20.svg" alt="staggering beauty"> -->
-        </a><br>
-        <a href="http://www.staggeringbeauty.com/">Staggering Beauty</a>
-    </div>
-</div>
-    
-    <div class="clearfix"></div>
-    
     <footer>
         <p>Mikaela, Ellinor, Sofie och Denis</p>
     </footer>
 
-    
-</div>
-
 </body>
+
 </html>

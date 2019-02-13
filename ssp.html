@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sten, sax och påse</title>
+    <!-- <link rel="stylesheet" href="memory/style.css"> -->
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+
+<body>
+    <header class="header">
+       <a href="#"> <h2 class="Logo">Spelsite</h2></a>
+        <nav id="main-nav" class="main-nav">
+
+            <ul class="nav">
+                <li class="nav-item"> <a href="index.html" target="_blank">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="playground">
+                <p id="BotChoose">Bot</p>
+                <p id="yourChoice">You</p>
+            </div>
+            <div>
+                <button onclick="random('Sten')">Sten</button>
+                <button onclick="random('Sax')">Sax</button>
+                <button onclick="random('Pose')">Påse</button>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <span>Sten sax påse</span> <br>
+        <span id="wHappend">Choose your destiny</span> <br>
+        <span>Score: </span>
+        <span id="Result">0</span> <br>
+        <h1>Tetris: <span id="tetris-score"></span></h1>
+            <h1>Memory: <span id="memory-score"></span></h1>
+            <h1>Snake: <span id="snake-score"></span></h1>
+            <h1>Sten, Sax, Påse: <span id="ssp-score"></span></h1>
+    </aside>
+
+    <footer>
+        <p>Mikaela, Ellinor, Sofie och Denis</p>
+    </footer>
+    <script src="webstorage.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="ssp.js"></script>
+</body>
+
+</html>

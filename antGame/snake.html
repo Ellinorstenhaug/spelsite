@@ -10,14 +10,16 @@
 </head>
 
 <body>
-    <header><h1>Welcome to ant with friends!</h1></header>
+    <header>
+        <h1>Welcome to ant with friends!</h1>
+    </header>
     <div id="container-score">
         <button class="btnstart">Start</button> <br>
         <span>Time:</span>
         <span id="timer">00000</span> <br>
         <span>Friends collected:</span>
         <span id="friend-count">__</span> <br>
-        <span>Score:</span> 
+        <span>Score:</span>
         <span id="score">0</span>
         points:<span id="point">0</span>
     </div>
@@ -31,20 +33,14 @@
     <div id="container-spel">
         <canvas id="gameCanvas" width="400" height=400"></canvas>
         <div style="display:none;">
-            <img id="horizontal"
-                 src="images/myra_kryper1.png"
-                 width="20" height="20">
-            <img id="vertical"
-                 src="images/myra_kryper2.png"
-                 width="20" height="20">
-                 <img id="source_friend"
-                      src="images/kompis_myra.png"
-                      width="20" height="20">
-          </div>
+            <img id="horizontal" src="images/myra_kryper1.png" width="20" height="20">
+            <img id="vertical" src="images/myra_kryper2.png" width="20" height="20">
+            <img id="source_friend" src="images/kompis_myra.png" width="20" height="20">
         </div>
-        <script src="../webstorage.js"></script>
-        <script src="../scoreboard.js"></script>
-        <script src="snake.js"></script>
+    </div>
+    <script src="../webstorage.js"></script>
+    <script src="../scoreboard.js"></script>
+    <script src="snake.js"></script>
 </body>
 
 </html>
