@@ -1,12 +1,9 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
-
-let points = 0;
-
 context.scale(20, 20);
 
-function arenaSweep () {
+function arenaSweep() {
     outer: for (let y = arena.length - 1; y > 0; --y) {
         for (let x = 0; x < arena[y].length; ++x) {
             if (arena[y][x] === 0) {
@@ -14,13 +11,22 @@ function arenaSweep () {
             }
         }
         const row = arena.splice(y, 1)[0].fill(0);
-
+        
         arena.unshift(row);
         ++y;
         // ++points;
-        document.getElementById('points').innerHTML = ++points;
+        ++point;
+        tetrisPoint.innerHTML = point;
+        
+        // tetrisScore.innerHTML = point; //Ska detta vara kvar?
+    }
+    
+}
 
-        } 
+function win () {
+    console.log(point);
+    webStorage.saveScore(point,game);
+    tetrisPoint.innerHTML = point; 
 
 }
 
@@ -31,11 +37,11 @@ function collide(arena, player) {
             if (m[y][x] !== 0 &&
                 (arena[y + o.y] &&
                     arena[y + o.y][x + o.x]) !== 0) {
-                return true;
+                        return true;
+                    }
+                }
             }
-        }
-    }
-    return false;
+            return false;
 
 }
 
@@ -43,8 +49,8 @@ function createMatrix(w, h) {
     const matrix = [];
     while (h--) {
         matrix.push(new Array(w).fill(0));
-
-
+        
+        
     }
     return matrix;
 }
@@ -58,8 +64,7 @@ function createPiece(type) {
             [1, 1, 1],
             [0, 1, 0],
         ];
-    }
-    else if (type === "O") {
+    } else if (type === "O") {
         matrix = [
             [2, 2],
             [2, 2]
@@ -70,41 +75,36 @@ function createPiece(type) {
             [0, 3, 0],
             [3, 3, 0]
         ];
-    }
-    else if (type === "L") {
+    } else if (type === "L") {
         matrix = [
             [0, 4, 0],
             [0, 4, 0],
             [0, 4, 4]
         ];
-    }
-    else if (type === "I") {
+    } else if (type === "I") {
         matrix = [
             [0, 5, 0, 0],
             [0, 5, 0, 0],
             [0, 5, 0, 0],
             [0, 5, 0, 0]
         ];
-    }
-    else if (type === "Z") {
+    } else if (type === "Z") {
         matrix = [
             [6, 6, 0],
             [0, 6, 6],
             [0, 0, 0]
         ];
-    }
-    else if (type === "S") {
+    } else if (type === "S") {
         matrix = [
             [0, 7, 7],
             [7, 7, 0],
             [0, 0, 0]
         ];
-    }
-    else {
+    } else {
         throw new Error(`Type of piece not defined: ${type}`);
     }
     console.log(`createPiece: ${type}`, matrix);
-    
+
     return matrix;
 }
 
@@ -112,8 +112,12 @@ function draw() {
     if (lockMatrix) return;
     context.fillStyle = '#000';
     context.fillRect(0, 0, canvas.width, canvas.height);
-    drawMatrix(arena, { x: 0, y: 0 });
+    drawMatrix(arena, {
+        x: 0,
+        y: 0
+    });
     drawMatrix(player.matrix, player.pos);
+    
 }
 
 function drawMatrix(matrix, offset) {
@@ -132,10 +136,9 @@ function drawMatrix(matrix, offset) {
 
                 }
             });
-        }
-        catch (caught) {
+        } catch (caught) {
             console.error(`drawMatrix EXCEPTION:`, row, caught);
-            throw(caught);
+            throw (caught);
 
         }
 
@@ -160,17 +163,18 @@ function playerDrop() {
     player.pos.y++;
     if (collide(arena, player)) {
         player.pos.y--;
+        
         merge(arena, player);
         playerReset();
         arenaSweep();
-
+        
     }
     dropCounter = 0;
 }
 
 function playerMove(dir) {
     if (lockMatrix) return;
-
+    
     player.pos.x += dir;
     if (collide(arena, player)) {
         player.pos.x -= dir;
@@ -180,7 +184,7 @@ function playerMove(dir) {
 
 
 function playerReset() {
-
+    
     const pieces = 'ILJOSZT';
     
     lockMatrix = 1;
@@ -188,11 +192,13 @@ function playerReset() {
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
     player.pos.x = (arena[0].length / 2 | 0) -
-        (player.matrix[0].length / 2 | 0);
+    (player.matrix[0].length / 2 | 0);
     
     if (collide(arena, player)) {
         arena.forEach(row => row.fill(0));
-
+        win();
+        // console.log("WASSAAAAs");
+        //Avslutas här
     }
     lockMatrix = 0;
 }
@@ -204,7 +210,7 @@ function playerRotate(dir) {
     rotate(player.matrix, dir);
     while (collide(arena, player)) {
         player.pos.x += offset;
-        offset = - (offset + (offset > 0 ? 1 : -1));
+        offset = -(offset + (offset > 0 ? 1 : -1));
         if (offset > player.matrix[0].length) {
             rotate(player.matrix, -dir);
             player.pos.x = pos;
@@ -220,16 +226,15 @@ function rotate(matrix, dir) {
                 matrix[x][y],
                 matrix[y][x],
             ] = [
-                    matrix[y][x],
-                    matrix[x][y],
+                matrix[y][x],
+                matrix[x][y],
 
-                ];
+            ];
         }
     }
     if (dir > 0) {
         matrix.forEach(row => row.reverse());
-    }
-    else {
+    } else {
         matrix.reverse();
     }
 }
@@ -255,8 +260,8 @@ function update(time = 0) {
     requestAnimationFrame(update);
 }
 
-const colors = [ 
-    null, 
+const colors = [
+    null,
     '#330136',
     '#5E1742',
     '#962E40',
@@ -269,7 +274,10 @@ const colors = [
 const arena = createMatrix(12, 20);
 
 const player = {
-    pos: { x: 0, y: 0 },
+    pos: {
+        x: 0,
+        y: 0
+    },
     matrix: null
 
 };
@@ -279,20 +287,15 @@ document.addEventListener('keydown', event => {
     if (lockMatrix) return;
     if (event.keyCode === 37) {
         playerMove(-1);
-    }
-    else if (event.keyCode === 39) {
+    } else if (event.keyCode === 39) {
         playerMove(1);
-    }
-    else if (event.keyCode === 40) {
+    } else if (event.keyCode === 40) {
         playerDrop();
-    }
-    else if (event.keyCode === 38) {
+    } else if (event.keyCode === 38) {
         playerRotate(-1);
-    }
-    else if (event.keyCode === 87) {
+    } else if (event.keyCode === 87) {
         playerRotate(1);
-    }
-    else if (event.keyCode === 32) {
+    } else if (event.keyCode === 32) {
         setTimeout(playerRotate(-1), 3000);
 
 
