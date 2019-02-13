@@ -20,8 +20,8 @@ body {
   padding: 0;
 }
 
-.monospace body {
-  font-family: monospace;
+a {
+  text-decoration: none;
 }
 
 button {
@@ -37,40 +37,45 @@ button {
   cursor: pointer;
   border-radius: 3px;
 }
+.page .clearfix {
+  clear: both;
+}
 
-.page a {
+.page > p {
   text-decoration: none;
   font-family: 'Pacifico', serif;
   font-size: 1.4em;
   color: white;
 }
 
-.page a:hover {
+.page p:hover {
   color: #FF5E35;
 
 }
 
-.page .game {
-  width: 50%;
-  float: left;
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-.page .clearfix {
-  clear: both;
-}
-
-.page .allgames {
+.allgames {
   max-width: 1200px;
-  margin: auto auto;
+  height:100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+}
+
+.page-game {
+  width: 50%;
+  padding:8%;
+  height:50%;
+  position: relative;
+  text-align: center;
 }
 
 .page img {
-  width: 60%;
-  height: auto;
+  width: 100%;
+  height: 50%;
   background-color: rgb(243, 243, 243);
-  margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 12px 10px 14px #330136;
 }
@@ -81,11 +86,6 @@ footer {
   width: 100%;
   padding: 2% 0% 2% 0%;
   text-align: center;
-}
-
-.page {
-  position: relative;
-  top: 450px;
 }
 
 .Logo,
@@ -212,23 +212,6 @@ a {
 }
 
 
-@keyframes bjr {
-
-  0%,
-  33% {
-    margin-right: initial;
-  }
-
-  33%,
-  66% {
-    margin-right: 5%;
-  }
-
-  66%,
-  100% {
-    margin-right: initial;
-  }
-}
 
 .bowser {
   background-color: none;
@@ -696,40 +679,17 @@ animation: tetris 4s infinite;
   width: 800px;
 }
 
-/* sofie */
 
-#bowser {
-  background-color: transparent;
-  right: 24%;
-  position: absolute;
-  height: 362px;
-  width: auto;
-  box-shadow: none;
+
+
+.staggering {
+  width: 408px;
+  height: 408px !important;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
+  
 }
 
-#bowtext {
-  position: absolute;
-  top: 388px;
-  right: 43%;
-}
-
-#background {
-  right: 24%;
-  position: absolute;
-  height: 362px;
-  width: auto;
-
-}
-
-#bowser:hover {
-  animation: bjr 2s infinite;
-}
-
-@keyframes ssp {}
-
-#sten:hover {
-  animation: ssp 4s;
-}
 
 #ants{ 
 position: absolute;
@@ -746,20 +706,19 @@ filter: alpha(opacity=0);
   filter: alpha(opacity=100);
 }
 @keyframes ssp {
-
   0%,
   33% {
-    top: 390px;
+    top: 125px;
   }
 
   33%,
   66% {
-    top: 450px;
+    top: 170px;
   }
 
   66%,
   100% {
-    top: 390px;
+    top: 125px;
   }
 }
 
@@ -786,116 +745,36 @@ filter: alpha(opacity=0);
   }
 }
 
+@keyframes bjr {
+  0%,
+  33% {
+    margin-left: initial;
+  }
+
+  33%,
+  66% {
+    margin-left: -5%;
+  }
+
+  66%,
+  100% {
+    margin-left: initial;
+  }
+}
+
+
+#bowser:hover {
+  animation: bjr 2s infinite;
+}
+#sten:hover {
+  animation: ssp 4s;
+}
 #ssp:hover {
   animation: ssp 4s infinite;
 }
-
-#stentext {
-  position: absolute;
-  top: 775px;
-  right: 43%;
-}
-
 #memory:hover {
   background-image: url(./images/index_memory2.svg);
 }
-
-#memory {
-  position: relative;
-  height: 362px;
-  width: auto;
-  left: 24%;
-}
-
-#memtext {
-  position: relative;
-  top: 388px;
-  left: 45%;
-}
-
-
 #tet:hover {
   animation: tetris 4s;
-}
-
-#tetris {
-  position: relative;
-  height: 363px;
-  width: auto;
-  left: 24%;
-  top: 765px;
-}
-
-#tet {
-  /* position: absolute; */
-  height: 363px;
-  width: auto;
-  left: 24%;
-  top: 765px;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-#tettext {
-  position: relative;
-  top: 1150px;
-  left: 49%;
-}
-
-#ants {
-  position: relative;
-  height: 362px;
-  width: auto;
-  left: 24%;
-  top: 390px;
-}
-
-
-#ant {
-  position: relative;
-  height: 362px;
-  width: auto;
-  left: 24%;
-  top: 390px;
-}
-
-#anttext {
-  position: relative;
-  top: 775px;
-  left: 40%;
-}
-
-#stagtext {
-  position: relative;
-  top: 1150px;
-  right: 37%;
-  margin-bottom: 149px;
-}
-
-#sten {
-  position: relative;
-  right: 24%;
-  height: 362px;
-  width: auto;
-  top: 390px;
-}
-
-#ssp {
-  position: relative;
-  right: 24%;
-  height: 362px;
-  width: auto;
-  top: 390px;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.staggering {
-  width: 360px;
-  height: 360px;
-  border-radius: 5px;
-  box-shadow: 12px 10px 14px #330136;
-  position: relative;
-  right: 24%;
-  top: 765px;
 }
