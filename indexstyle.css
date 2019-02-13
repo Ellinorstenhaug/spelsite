@@ -91,11 +91,13 @@ footer {
 }
 
 .staggering {
-  width: 360px;
-  height: 360px;
+  width:360px;
+  height:360px;
   border-radius: 5px;
-  box-shadow: 12px 10px 14px #330136;
-
+  box-shadow: 12px 10px 14px #330136; 
+  position: absolute;
+  right: 24%;
+  top: 924px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
