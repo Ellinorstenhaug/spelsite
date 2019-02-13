@@ -1,4 +1,4 @@
-const canvas = document.getElementById('tetris');
+const canvas = document.getElementById('tetris-game');
 const context = canvas.getContext('2d');
 let point = 0;
 let tetrisPoint = document.getElementById('tetris-points');

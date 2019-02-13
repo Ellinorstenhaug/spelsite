@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
@@ -90,13 +91,6 @@ footer {
   top: 450px;
 }
 
-.staggering {
-  width: 360px;
-  height: 360px;
-  border-radius: 5px;
-  box-shadow: 12px 10px 14px #330136;
-
-}
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 
@@ -189,9 +183,9 @@ a {
   position: absolute;
 }
 
-.bgimage {
+/* .bgimage {
   position: absolute;
-}
+} */
 
 @keyframes tetris {
 
@@ -465,7 +459,7 @@ span {
 }
 
 
-  
+
 .opponent {
   position: relative;
   height: 300px;
@@ -521,6 +515,7 @@ span {
   font-size: 24px;
   width: 50%;
 }
+
 .box .continue {
   position: absolute;
   margin-top: 30px;
@@ -528,7 +523,8 @@ span {
   width: 25%;
   height: 100%;
 }
-.box .continue  button {
+
+.box .continue button {
   position: relative;
   float: left;
   background: #666;
@@ -542,6 +538,7 @@ span {
   padding: 16px;
   outline: none !important;
 }
+
 .box .continue button:hover {
   background: #777;
   border-color: #999;
@@ -607,40 +604,52 @@ span {
 }
 
 @keyframes move {
-  0%, 33%{
-    margin-left: initial; 
+
+  0%,
+  33% {
+    margin-left: initial;
   }
-  33%, 66%{
-    margin-left: 5%; 
+
+  33%,
+  66% {
+    margin-left: 5%;
   }
-  66%, 100%{
-    margin-left: initial; 
+
+  66%,
+  100% {
+    margin-left: initial;
   }
 }
 
-#mario{
-  animation: move 2s infinite; 
-  animation-play-state: paused; 
+#mario {
+  animation: move 2s infinite;
+  animation-play-state: paused;
 }
 
 @keyframes Abjr {
-  0%, 33%{
-    margin-right: initial; 
+
+  0%,
+  33% {
+    margin-right: initial;
   }
-  33%, 66%{
-    margin-right: 5%; 
+
+  33%,
+  66% {
+    margin-right: 5%;
   }
-  66%, 100%{
-    margin-right: initial; 
+
+  66%,
+  100% {
+    margin-right: initial;
   }
 }
 
-#bjr{
-  animation: Abjr 2s infinite; 
-  animation-play-state: paused; 
+#bjr {
+  animation: Abjr 2s infinite;
+  animation-play-state: paused;
 }
 
-#startplay{
+#startplay {
   position: absolute;
   background-color: #000000a3;
   padding: 297px;
@@ -649,6 +658,7 @@ span {
   padding-right: 360px;
   font-size: 20px;
 }
+
 .mario-game {
   position: relative;
   background-image: url('images/images/gamebackground.png');
@@ -658,4 +668,194 @@ span {
   border-radius: 8px 8px 0 0;
   height: 480px;
   width: 800px;
+}
+
+/* sofie */
+
+#bowser {
+  background-color: transparent;
+  right: 24%;
+  position: absolute;
+  height: 362px;
+  width: auto;
+  box-shadow: none;
+}
+
+#bowtext {
+  position: absolute;
+  top: 388px;
+  right: 43%;
+}
+
+#background {
+  right: 24%;
+  position: absolute;
+  height: 362px;
+  width: auto;
+
+}
+
+#bowser:hover {
+  animation: bjr 2s infinite;
+}
+
+@keyframes ssp {}
+
+#sten:hover {
+  animation: ssp 4s;
+}
+
+@keyframes ssp {
+
+  0%,
+  33% {
+    top: 390px;
+  }
+
+  33%,
+  66% {
+    top: 450px;
+  }
+
+  66%,
+  100% {
+    top: 390px;
+  }
+}
+
+@keyframes tetris {
+
+  0%,
+  25% {
+    margin-top: 1%;
+  }
+
+  25%,
+  50% {
+    margin-top: 2%;
+  }
+
+  50%,
+  75% {
+    margin-top: 3%;
+  }
+
+  75%,
+  100% {
+    margin-top: 4%;
+  }
+}
+
+#ssp:hover {
+  animation: ssp 4s infinite;
+}
+
+#stentext {
+  position: absolute;
+  top: 775px;
+  right: 43%;
+}
+
+#memory:hover {
+  background-image: url(./images/index_memory2.svg);
+}
+
+#memory {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+}
+
+#memtext {
+  position: relative;
+  top: 388px;
+  left: 45%;
+}
+
+
+#tet:hover {
+  animation: tetris 4s;
+}
+
+#tetris {
+  position: relative;
+  height: 363px;
+  width: auto;
+  left: 24%;
+  top: 765px;
+}
+
+#tet {
+  /* position: absolute; */
+  height: 363px;
+  width: auto;
+  left: 24%;
+  top: 765px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#tettext {
+  position: relative;
+  top: 1150px;
+  left: 49%;
+}
+
+#ants {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+  top: 390px;
+}
+
+
+#ant {
+  position: relative;
+  height: 362px;
+  width: auto;
+  left: 24%;
+  top: 390px;
+}
+
+#anttext {
+  position: relative;
+  top: 775px;
+  left: 40%;
+}
+
+#stagtext {
+  position: relative;
+  top: 1150px;
+  right: 37%;
+  margin-bottom: 149px;
+}
+
+#sten {
+  position: relative;
+  right: 24%;
+  height: 362px;
+  width: auto;
+  top: 390px;
+}
+
+#ssp {
+  position: relative;
+  right: 24%;
+  height: 362px;
+  width: auto;
+  top: 390px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.staggering {
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 12px 10px 14px #330136;
+  position: relative;
+  right: 24%;
+  top: 765px;
 }
