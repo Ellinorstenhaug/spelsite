@@ -97,7 +97,7 @@ footer {
   box-shadow: 12px 10px 14px #330136; 
   position: absolute;
   right: 24%;
-  top: 924px;
+  top: 765px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
@@ -480,7 +480,7 @@ box-shadow: none;
 #bowtext{
 position: absolute;
 top: 388px;
-right: 29%; 
+right: 43%; 
 }
 
 #background{
@@ -508,7 +508,7 @@ position: absolute;
 right: 24%; 
 height: 362px;
 width: auto;
-top: 461px;
+top: 390px;
 }
 
 #ssp{
@@ -516,20 +516,20 @@ position: absolute;
 right: 24%; 
 height: 362px;
 width: auto;
-top: 461px;
+top: 390px;
 background-color: transparent; 
 box-shadow: none;
 }
 
 @keyframes ssp {
 0%, 33%{
-top: 461px; 
+top: 390px; 
 }
 33%, 66%{
-top: 500px; 
+top: 450px; 
 }
 66%, 100%{
-top: 461px; 
+top: 390px; 
 }
 }
 
@@ -538,8 +538,8 @@ animation: ssp 4s infinite; }
 
 #stentext{
 position: absolute;
-top: 850px;
-right: 28%; 
+top: 775px;
+right: 43%;
 }
 
 #memory:hover{
@@ -556,7 +556,7 @@ left: 24%;
 #memtext{
 position: absolute;
 top: 388px;
-left: 30%; 
+left: 45%; 
 }
 
 @keyframes tetris {
@@ -583,7 +583,7 @@ position: absolute;
 height: 363px;
 width: auto;
 left: 24%;
-top: 924px;
+top: 765px;
 }
 
 #tet{
@@ -591,15 +591,15 @@ position: absolute;
 height: 363px;
 width: auto;
 left: 24%;
-top: 924px;
+top: 765px;
 background-color: transparent; 
 box-shadow: none; 
 }
 
 #tettext{
 position: absolute;
-top: 1320px;
-left: 32%;
+top: 1150px;
+left: 49%;
 }
 
 #ants{ 
@@ -607,7 +607,7 @@ position: absolute;
 height: 362px;
 width: auto;
 left: 24%;
-top: 461px;
+top: 390px;
 }
 
 
@@ -616,11 +616,18 @@ position: absolute;
 height: 362px;
 width: auto;
 left: 24%;
-top: 461px;
+top: 390px;
 }
 
 #anttext{
 position: absolute;
-top: 850px;
-left: 27%; 
+top: 775px;
+left: 40%; 
+}
+
+#stagtext{
+  position: absolute;
+    top: 1150px;
+    right: 37%; 
+    margin-bottom: 149px; 
 }
